@@ -1,10 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Фотографии</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Фотографии пользователей</h1>
+      <a href="#" class="page-header__logo">
+        <img src="#" alt="Логотип Пинк" class="page-header__logo-image" width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <section class="share-photo">
+        <div class="share-photo__list">
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Анны"></a>
+            </p>
+            <cite class="share-photo__author-name">Анна</cite>
+            (5 минут назад)
+            <p class="share-photo__text">
+              Прыгать или нет? Напишите в коментарии свой совет и
+              смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 215</p>
+          </blockquote>
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Левона"></a>
+            </p>
+            <cite class="share-photo__author-name">Левон</cite>
+            (5 часов назад)
+            <p class="share-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 356</p>
+          </blockquote>
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Антона"></a>
+            </p>
+            <cite class="share-photo__author-name">Антон</cite>
+            (12 часов назад)
+            <p class="share-photo__text">Соседи будут рады!</p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 666</p>
+          </blockquote>
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Бориса"></a>
+            </p>
+            <cite class="share-photo__author-name">Борис</cite>
+            (20 часов назад)
+            <p class="share-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 215</p>
+          </blockquote>
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Сергея"></a>
+            </p>
+            <cite class="share-photo__author-name">Сергей</cite>
+            (25 часов назад)
+            <p class="share-photo__text">Самая кубанская в мире!</p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 4</p>
+          </blockquote>
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Максима"></a>
+            </p>
+            <cite class="share-photo__author-name">Максим</cite>
+            (40 часов назад)
+            <p class="share-photo__text">Где снег-то?</p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 150</p>
+          </blockquote>
+          <blockquote class="share-photo__item">
+            <p class="share-photo__author-picture">
+              <a href="#"><img class="share-photo__author-image" src="#" width="320" height="137" alt="Фото Надежды"></a>
+            </p>
+            <cite class="share-photo__author-name">Надежда</cite>
+            (45 часов назад)
+            <p class="share-photo__text">Всем GM и взаимные лайки!</p>
+            <p class="share-photo__like share-photo__like--heart">Нравится: 2560</p>
+          </blockquote>
+        </div>
+      </section>
+      <section class="post-photo">
+        <h2 class="post-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" class="post-photo__create">
+          <img src="#" alt="Редактируемое фото" class="post-photo__image" width="280" height="374">
+          <div class="post-photo__tool">
+            <button class="post-photo__clipping">
+              <span class="visually-hidden">Обрезать</span>
+            </button>
+            <div class="post-photo__range-controls">
+              <div class="post-photo__scale">
+                <div class="post-photo__toggle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="post-photo__tool">
+            <button class="post-photo__pouring">
+              <span class="visually-hidden">Залить</span>
+            </button>
+            <div class="post-photo__range-controls">
+              <div class="post-photo__scale">
+                <div class="post-photo__toggle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="post-photo__tool">
+            <button class="post-photo__transparency">
+              <span class="visually-hidden">Изменить прозрачность</span>
+            </button>
+            <div class="post-photo__range-controls">
+              <div class="post-photo__scale">
+                <div class="post-photo__toggle"></div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="post-photo__send">Запостить</button>
+          <button class="post-photo__reset">Отмена</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <img src="#" alt="Логотип Пинк" class="page-footer__logo-image" width="147" height="40">
+      <div class="page-footer__social">
+        <ul>
+          <li>
+            <a class="social-button">
+              <span class="visually-hidden">Twitter</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button">
+              <span class="visually-hidden">Facebook</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button">
+              <span class="visually-hidden">Youtube</span>
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <p>Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="website-by-logo">
+          <span class="visually-hidden">Логотип Академии</span>
+          <svg></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

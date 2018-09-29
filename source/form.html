@@ -2,118 +2,116 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Форма</title>
+    <title>Конкурс</title>
   </head>
   <body>
     <header class="page-header">
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
       <a href="#" class="page-header__logo">
         <img src="#" alt="Логотип Пинк" class="page-header__logo-image" width="75" height="22">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="form-land">
+        <div class="form-land__item form-land__item--field">
+          <ul class="form-land__list">
+            <li class="form-land__item">
+              <label for="second-name" class="data-label">Фамилия:</label>
+              <input class="data-field" id="second-name" type="text" name="second-name" value="" placeholder="Укажите фамилию *">
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+            <li class="form-land__item">
+              <label for="first-name" class="data-label">Имя:</label>
+              <input class="data-field" id="first-name" type="text" name="first" value="" placeholder="Введите ваше имя *">
             </li>
-            <li class="site-list__item">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="form-land__item">
+              <label for="patronymic-name" class="data-label">Отчество:</label>
+              <input class="data-field" id="patronymic-name" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </div>
-      </nav>
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </header>
-    <main class="page-main">
-      <h2 class="page-main__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
-        <form action="https://echo.htmlacademy.ru" method="post" class="form-land">
-          <div class="form-land__item--field">
-            <ul class="form-land__list">
-              <li class="form-land__item">
-                <label for="second-name" class="data-label">Фамилия:</label>
-                <input class="data-field" id="second-name" type="text" name="second-name" value="" placeholder="Укажите фамилию *">
-              </li>
-              <li class="form-land__item">
-                <label for="first-name" class="data-label">Имя:</label>
-                <input class="data-field" id="first-name" type="text" name="first" value="" placeholder="Введите ваше имя *">
-              </li>
-              <li class="form-land__item">
-                <label for="patronymic-name" class="data-label">Отчество:</label>
-                <input class="data-field" id="patronymic-name" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
-              </li>
-            </ul>
-          </div>
-          <div class="form-land__item--check">
-            <p>Ваши безбашенные достижения в путешествии</p>
-            <ul class="form-land__list">
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="checkbox" name="shark" id="shark" checked>
-                <label for="shark">Сделал селфи с акулой</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="checkbox" name="scorched" id="scorched" checked>
-                <label for="scorched">Обгорел на пляже</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="checkbox" name="chuck" id="chuck">
-                <label for="chuck">Видел Чака Норриса</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="checkbox" name="souvenir" id="souvenir">
-                <label for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="checkbox" name="tower" id="tower" checked>
-                <label for="tower">Удержал башню</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="checkbox" name="hotel" id="hotel">
-                <label for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </div>
-          <div class="form-land__item--field">
-            <ul class="form-land__list">
-              <li class="form-land__item">
-                <label for="number-phone" class="data-label">Номер телефона:</label>
-                <input class="data-field" id="number-phone" type="tel" name="number-phone" value="" placeholder="Номер, пожалуйста">
-              </li>
-              <li class="form-land__item">
-                <label for="email-user" class="data-label">Адрес почты:</label>
-                <input class="data-field" id="email-user" type="email" name="email-user" value="" placeholder="Введите почту *">
-              </li>
-            </ul>
-          </div>
-          <div class="form-land__item--radio">
-            <p>С каким приложением путешествовали?</p>
-            <ul class="form-land__list">
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="radio" name="iOS" id="iOS" checked>
-                <label for="iOS">Pink для iOS</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="radio" name="android" id="android">
-                <label for="android">Pink на Android</label>
-              </li>
-              <li class="form-land__item">
-                <input class="visually-hidden form-land__checkbox" type="radio" name="windows" id="windows">
-                <label for="windows">Windows Phone</label>
-              </li>
-            </ul>
-          </div>
-          <div class="form-land__item--area">
-            <p>Опишите свои эмоции</p>
-            <textarea rows="10" cols="45" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
-          <button type="submit" class="form-land__button">Отправить форму</button>
-          <p><span>*</span> — обязательные поля</p>
-        </form>
+        <div class="form-land__item form-land__item--check">
+          <p>Ваши безбашенные достижения в путешествии</p>
+          <ul class="form-land__list">
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="checkbox" name="shark" id="shark" checked>
+              <label for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="checkbox" name="scorched" id="scorched" checked>
+              <label for="scorched">Обгорел на пляже</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="checkbox" name="chuck" id="chuck">
+              <label for="chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="checkbox" name="souvenir" id="souvenir">
+              <label for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label for="tower">Удержал башню</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="checkbox" name="hotel" id="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-land__item form-land__item--field">
+          <ul class="form-land__list">
+            <li class="form-land__item">
+              <label for="number-phone" class="data-label">Номер телефона:</label>
+              <input class="data-field" id="number-phone" type="tel" name="number-phone" value="" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="form-land__item">
+              <label for="email-user" class="data-label">Адрес почты:</label>
+              <input class="data-field" id="email-user" type="email" name="email-user" value="" placeholder="Введите почту *">
+            </li>
+          </ul>
+        </div>
+        <div class="form-land__item form-land__item--radio">
+          <p>С каким приложением путешествовали?</p>
+          <ul class="form-land__list">
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="radio" name="iOS" id="iOS" checked>
+              <label for="iOS">Pink для iOS</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="radio" name="android" id="android">
+              <label for="android">Pink на Android</label>
+            </li>
+            <li class="form-land__item">
+              <input class="visually-hidden form-land__checkbox" type="radio" name="windows" id="windows">
+              <label for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-land__item form-land__item--area">
+          <p>Опишите свои эмоции</p>
+          <textarea rows="10" cols="45" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <button type="submit" class="form-land__button">Отправить форму</button>
+        <p><span>*</span> — обязательные поля</p>
+      </form>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Социальные сети</h2>
@@ -142,11 +140,24 @@
       </div>
       <div class="page-footer__copyright">
         <p>Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="website-by-logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="website-by-logo">
           <span class="visually-hidden">Логотип Академии</span>
           <svg></svg>
         </a>
       </div>
     </footer>
+    <section class="popup-accept">
+      <b>Ваша заявка отправлена</b>
+      <p>
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+        оповестим вас.
+      </p>
+      <a href="#" class="popup=accept__close-window">Закрыть окно</a>
+    </section>
+    <section class="popup-wrong">
+      <b>Что-то пошло не так!</b>
+      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <a href="#" class="popup-wrong__close-window">Ок</a>
+    </section>
   </body>
 </html>
