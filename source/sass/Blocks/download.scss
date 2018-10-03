@@ -1,18 +1,17 @@
 .download {
-  background-color: #1d2631;
+  background-color: $top-color;
 }
 
 .download__button {
   font-size: 18px;
   line-height: 18px;
-  color: #ffffff;
+  color: $white;
 }
 
 .download__list {
-  margin: 0;
-  padding: 0;
+  @include clear-list;
 }
 
 .download p {
-  color: #ffffff;
+  color: $white;
 }

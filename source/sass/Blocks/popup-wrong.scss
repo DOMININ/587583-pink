@@ -1,10 +1,10 @@
 .popup-wrong b {
-  color: #000000;
+  color: $black;
   font-size: 18px;
 }
 
 .popup-wrong__close-window {
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
-  background-color: #2aab6d;
+  background-color: $green;
 }

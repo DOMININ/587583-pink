@@ -1,6 +1,5 @@
 .form-land__list {
-  margin: 0;
-  padding: 0;
+  @include clear-list;
 }
 
 .form-land__item {
@@ -11,16 +10,16 @@
 .form-land__item p {
   margin: 0;
   line-height: 18px;
-  color: #d22856;
+  color: $pink;
   text-transform: uppercase;
 }
 
 .form-land__button {
   font-size: 18px;
   line-height: 30px;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
-  background-color: #2aab6d;
+  background-color: $green;
 }
 
 .form-land__obligatorily {
@@ -30,5 +29,5 @@
 }
 
 .form-land__obligatorily span {
-  color: #d22856;
+  color: $pink;
 }

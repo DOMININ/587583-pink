@@ -1,18 +1,18 @@
 .share-photo__item {
-  background-color: #f2f2f2;
+  background-color: $grey-light;
 }
 
 .share-photo__like {
   font-size: 12px;
   text-transform: uppercase;
-  color: #d22856;
+  color: $pink;
 }
 
 .share-photo__panorama {
-  color: #ffffff;
+  color: $white;
   font-size: 12px;
   text-transform: uppercase;
-  background-color: #d22856;
+  background-color: $pink;
 }
 
 .share-photo__author-time {
