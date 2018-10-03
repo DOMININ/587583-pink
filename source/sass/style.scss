@@ -1,0 +1,35 @@
+/* global */
+@import "normalize";
+@import "variables";
+@import "general";
+
+/* header */
+@import "Blocks/page-header";
+@import "Blocks/main-nav";
+
+/* main */
+@import "Blocks/page-main";
+
+/* main-index */
+@import "Blocks/download";
+@import "Blocks/description";
+@import "Blocks/reviews";
+@import "Blocks/edition";
+
+/* main-form */
+@import "Blocks/form-land";
+@import "Blocks/data-label";
+
+/* main-photo */
+@import "Blocks/share-photo";
+@import "Blocks/post-photo";
+
+/* footer */
+@import "Blocks/page-footer";
+
+/*footer-index*/
+@import "Blocks/contacts";
+
+/* popup-form */
+@import "Blocks/popup-accept";
+@import "Blocks/popup-wrong";

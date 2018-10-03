@@ -1,0 +1,17 @@
+.download {
+  background-color: $top-color;
+}
+
+.download__button {
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+}
+
+.download__list {
+  @include clear-list;
+}
+
+.download p {
+  color: $white;
+}

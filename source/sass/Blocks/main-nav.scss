@@ -1,0 +1,7 @@
+.main-nav__list {
+  @include clear-list;
+  font-size: 18px;
+  line-height: 32px;
+  color: $white;
+  text-transform: uppercase;
+}

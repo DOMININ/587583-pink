@@ -1,0 +1,25 @@
+.edition {
+  background-color: $white;
+}
+
+.edition__list {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.edition__item p {
+  margin: 0;
+  text-align: center;
+
+  &:first-child {
+    color: $white;
+    font-size: 18px;
+    background-color: $text-color;
+  }
+
+  &:last-child {
+    color: $white;
+    font-size: 24px;
+    background-color: $text-color;
+  }
+}
