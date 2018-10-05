@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <h1>Фотографии пользователей</h1>
-      <a href="#" class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-image" width="74" height="22">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <h1>Фотографии пользователей</h1>
+        <div class="page-header__no-title">
+          <a href="#" class="page-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-image" width="74" height="22">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>

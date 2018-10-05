@@ -3,36 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <a href="#" class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-image" width="74" height="22">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="page-header__no-title">
+          <a href="#" class="page-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" class="page-header__logo-image" width="74" height="22">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a>Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="form-land">
-        <div class="form-land__item form-land__item--field">
+        <div class="form-land__field-item form-land__field-item--field">
           <ul class="form-land__list">
             <li class="form-land__item">
               <label for="second-name" class="data-label">Фамилия:</label>
@@ -48,7 +53,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-land__item form-land__item--check">
+        <div class="form-land__field-item form-land__field-item--check">
           <p>Ваши безбашенные достижения в путешествии</p>
           <ul class="form-land__list">
             <li class="form-land__item">
@@ -77,7 +82,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-land__item form-land__item--field">
+        <div class="form-land__field-item form-land__field-item--field">
           <ul class="form-land__list">
             <li class="form-land__item">
               <label for="number-phone" class="data-label">Номер телефона:</label>
@@ -89,7 +94,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-land__item form-land__item--radio">
+        <div class="form-land__field-item form-land__field-item--radio">
           <p>С каким приложением путешествовали?</p>
           <ul class="form-land__list">
             <li class="form-land__item">
@@ -106,12 +111,14 @@
             </li>
           </ul>
         </div>
-        <div class="form-land__item form-land__item--area">
+        <div class="form-land__field-item form-land__field-item--area">
           <p>Опишите свои эмоции</p>
           <textarea rows="10" cols="45" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <button type="submit" class="form-land__button">Отправить форму</button>
-        <p class="form-land__obligatorily"><span>*</span> — обязательные поля</p>
+        <div class="form-land__footer-wrapper">
+          <button type="submit" class="form-land__button">Отправить форму</button>
+          <p class="form-land__obligatorily"><span>*</span> — обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">

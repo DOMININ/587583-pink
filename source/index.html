@@ -3,30 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74" height="22">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__no-title">
+          <a href="#" class="page-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74" height="22">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list">
+              <li class="site-list__item">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <section class="download">
@@ -51,7 +57,7 @@
       </div>
       <section class="description">
         <h2 class="visually-hidden">Описание приложения</h2>
-        <ul class="description__list about-list">
+        <ul class="description__list">
           <li class="about-list__item">
             <h3>Поднимает настроение</h3>
             <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -138,14 +144,22 @@
     <footer class="page-footer">
       <h2 class="page-footer__feedback">Остались вопросы? Свяжитесь с нами!</h2>
       <section class="page-footer__contacts contacts">
-        <b class="contacts__title">Звоните:</b>
-        <p class="contacts__text">
-          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <b class="contacts__title">Пишите:</b>
-        <p class="contacts__text">mail@htmlacademy.ru</p>
-        <b class="contacts__title">Приезжайте в гости:</b>
-        <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+        <ul class="contacts__list">
+          <li>
+            <b class="contacts__title">Звоните:</b>
+            <p class="contacts__text">
+              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+          </li>
+          <li>
+            <b class="contacts__title">Пишите:</b>
+            <p class="contacts__text">mail@htmlacademy.ru</p>
+          </li>
+          <li>
+            <b class="contacts__title">Приезжайте в гости:</b>
+            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
       </section>
       <section class="map">
         <img src="img/bg-map-mobile@1x.png" alt="Адрес на карте" class="map__mini-map" width="320" height="645">
