@@ -3,11 +3,20 @@
 }
 
 .description__list {
-  @include clear-list;
+  //@include clear-list;
 }
 
 .description__list h3 {
   color: $black;
   font-size: 18px;
   line-height: 10px;
+}
+
+/* Временно для сетки */
+@media (min-width: $desktop-width) {
+  .description__list {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
 }

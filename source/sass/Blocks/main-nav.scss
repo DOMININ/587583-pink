@@ -1,7 +1,27 @@
 .main-nav__list {
-  @include clear-list;
+  //@include clear-list();
   font-size: 18px;
   line-height: 32px;
   color: $white;
   text-transform: uppercase;
+}
+
+/*временно для сетки*/
+.main-nav {
+  min-height: 255px;
+}
+
+/* Временно для сетки */
+@media (min-width: $desktop-width) {
+  .main-nav {
+    min-height: 110px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

@@ -1,13 +1,13 @@
 .form-land__list {
-  @include clear-list;
+  //@include clear-list;
 }
 
-.form-land__item {
+.form-land__field-item {
   font-size: 18px;
   line-height: 30px;
 }
 
-.form-land__item p {
+.form-land__field-item p {
   margin: 0;
   line-height: 18px;
   color: $pink;
@@ -30,4 +30,44 @@
 
 .form-land__obligatorily span {
   color: $pink;
+}
+
+/* Временно для сетки */
+@media (min-width: $tablet-width) {
+  .form-land {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-land__field-item:nth-child(1) {
+    order: 1;
+  }
+
+  .form-land__field-item:nth-child(2) {
+    order: 4;
+  }
+
+  .form-land__field-item:nth-child(3) {
+    order: 3;
+  }
+
+  .form-land__field-item:nth-child(4) {
+    order: 2;
+  }
+
+  .form-land__field-item:nth-child(5) {
+    order: 5;
+  }
+
+  .form-land__footer-wrapper {
+    order: 6;
+  }
+}
+
+/* Временно для сетки */
+@media (min-width: $desktop-width) {
+  .form-land__footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

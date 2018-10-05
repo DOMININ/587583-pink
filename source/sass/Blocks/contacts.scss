@@ -7,3 +7,12 @@
   font-size: 24px;
   color: $pink;
 }
+
+/* Временно для сетки */
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
+}
