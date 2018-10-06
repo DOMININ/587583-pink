@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $top-color;
+  background-color: $text-color;
 }
 
 .page-header h1 {
@@ -10,10 +10,12 @@
   order: 3;
 }
 
-/*временно для сетки*/
 .page-header__logo {
   display: block;
-  min-height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid $black;
 }
 
 .page-header__wrapper {

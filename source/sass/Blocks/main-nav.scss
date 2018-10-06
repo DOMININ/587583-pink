@@ -1,14 +1,22 @@
 .main-nav__list {
-  //@include clear-list();
+  @include clear-list();
   font-size: 18px;
   line-height: 32px;
   color: $white;
   text-transform: uppercase;
+  background-color: $text-color;
 }
 
-/*временно для сетки*/
-.main-nav {
-  min-height: 255px;
+.site-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid $black;
+}
+
+.site-list__item a {
+  color: $white;
 }
 
 /* Временно для сетки */

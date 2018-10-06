@@ -15,7 +15,9 @@
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74" height="22">
           </a>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle visually-hidden" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
             <ul class="main-nav__list">
               <li class="site-list__item">
                 <a>Главная</a>
@@ -35,17 +37,24 @@
       </div>
     </header>
     <main class="page-main">
+      <section class="hand"></section>
       <section class="download">
         <button class="download__button" type="button">Скачать приложение</button>
-        <ul class="download__list app-list">
-          <li class="app-list__item">
-            <a href="#" class="app-list__item--apple">Скачать на iphone</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a href="#" class="download__item download__item--apple">
+              <span class="visually-hidden">Скачать на iphone</span>
+            </a>
           </li>
-          <li class="app-list__item">
-            <a href="#" class="app-list__item--android">Скачать на android</a>
+          <li class="download__item">
+            <a href="#" class="download__item download__item--android">
+              <span class="visually-hidden">Скачать на android</span>
+            </a>
           </li>
-          <li class="app-list__item">
-            <a href="#" class="app-list__item--windows">Скачать на windows</a>
+          <li class="download__item">
+            <a href="#" class="download__item download__item--windows">
+              <span class="visually-hidden">Скачать на windows</span>
+            </a>
           </li>
         </ul>
         <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -110,23 +119,24 @@
           <h2 class="visually-hidden">Тип издания</h2>
           <div class="slider__list">
             <table class="edition__list slider__item">
-              <tr>
-                <td class="edition__item edition__item--hit">
+              <tr class="edition__stroke">
+                <td class="edition__item edition__item-border edition__item--hit">
                   <p>Стандарт</p>
+                  <p class="edition__banner">Хит</p>
                   <p>3,99 USD</p>
                 </td>
               </tr>
-              <tr>
-                <td class="edition__item edition__item--yes">
+              <tr class="edition__stroke">
+                <td class="edition__item edition__item-border-top edition__item--yes">
                   Розовый фильтр
                 </td>
               </tr>
-              <tr>
+              <tr class="edition__stroke">
                 <td class="edition__item edition__item--yes">
                   Смайлики
                 </td>
               </tr>
-              <tr>
+              <tr class="edition__stroke">
                 <td class="edition__item edition__item--no">
                   Комментарии
                 </td>

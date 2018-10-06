@@ -1,10 +1,90 @@
 .edition {
-  background-color: $white;
+  padding-top: 90px;
+  padding-bottom: 45px;
+  background-color: $grey-light;
 }
 
 .edition__list {
+  margin: 0 auto;
+  padding-bottom: 40px;
   line-height: 30px;
   text-transform: uppercase;
+  width: 280px;
+  border-collapse: collapse;
+}
+
+.edition__stroke:first-child {
+  padding: 25px;
+  background-color: $text-color;
+}
+
+.edition__stroke:not(:first-child) {
+  background-color: $white;
+}
+
+.edition__stroke:first-child .edition__item {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.edition__stroke:not(:first-child) .edition__item {
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.edition__item {
+  position: relative;
+  border: 2px solid #e5e5e5;
+
+  &--hit::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 73px;
+    height: 73px;
+    background: url("../../img/bg-hit.svg") no-repeat top left;
+  }
+
+  &--yes::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 19px;
+    width: 22px;
+    height: 18px;
+    background: url("../../img/icon-yes.svg") no-repeat center right;
+  }
+
+  &--no::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 19px;
+    width: 27px;
+    height: 29px;
+    background: url("../../img/icon-no.svg") no-repeat center right;
+  }
+}
+
+.edition__banner {
+  position: absolute;
+  content: "";
+  font-size: 16px;
+  color: $white;
+  transform: rotate(-45deg);
+  top: 13px;
+  left: 10px;
+}
+
+.edition__item-border {
+  border-top: none;
+  border-bottom: none;
+}
+
+.edition__item-border-top {
+  border-top: none;
 }
 
 .edition__item p {
@@ -14,12 +94,16 @@
   &:first-child {
     color: $white;
     font-size: 18px;
-    background-color: $text-color;
   }
 
   &:last-child {
     color: $white;
     font-size: 24px;
-    background-color: $text-color;
   }
+}
+
+.edition__toggles {
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
 }

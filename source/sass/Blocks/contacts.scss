@@ -1,10 +1,21 @@
+.contacts__list {
+  @include clear-list;
+  text-align: center;
+}
+
 .contacts__title {
   font-size: 18px;
 }
 
 .contacts__text {
   margin: 0;
+  padding-top: 5px;
+  padding-bottom: 35px;
   font-size: 24px;
+  color: $pink;
+}
+
+.contacts__text a {
   color: $pink;
 }
 

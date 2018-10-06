@@ -6,3 +6,18 @@
 .page-main__slogan {
   font-size: 24px;
 }
+
+.page-main__slogan p {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  &:first-child {
+    padding-top: 50px;
+  }
+
+  &:last-child {
+    padding-top: 45px;
+    padding-bottom: 38px;
+  }
+}

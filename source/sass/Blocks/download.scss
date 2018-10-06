@@ -1,17 +1,55 @@
 .download {
   background-color: $top-color;
+  padding-top: 28px;
+  padding-bottom: 37px;
 }
 
 .download__button {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 18px;
   color: $white;
+  border: 3px solid $white;
+  border-radius: 30px;
+  background: transparent;
 }
 
 .download__list {
-  //@include clear-list;
+  @include clear-list;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-right: 58px;
+  padding-left: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__item {
+  display: block;
+  height: 57px;
+  width: 47px;
+
+  &--apple {
+    background: url("../../img/logo-apple.svg") no-repeat;
+  }
+
+  &--android {
+    background: url("../../img/logo-android.svg") no-repeat center;
+  }
+
+  &--windows {
+    background: url("../../img/logo-microsoft.svg") no-repeat center;
+  }
 }
 
 .download p {
+  margin: 0 auto;
+  padding: 0;
+  width: 233px;
+  text-align: center;
   color: $white;
 }

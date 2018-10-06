@@ -1,0 +1,15 @@
+.hand {
+  position: relative;
+  padding-top: 395px;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat bottom center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/iphone-hand-mobile@1x.png") no-repeat;
+    width: 266px;
+    height: 286px;
+    left: 0;
+    bottom: 0;
+  }
+}

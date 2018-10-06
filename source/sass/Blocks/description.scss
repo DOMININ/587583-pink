@@ -1,15 +1,43 @@
 .description {
-  background-color: $white;
+  position: relative;
+  background-color: $grey-light;
+
+  &::after {
+    position: absolute;
+    content: "";
+    margin-left: -78px;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
+    height: 278px;
+    width: 157px;
+    left: 50%;
+    bottom: 0;
+  }
 }
 
 .description__list {
-  //@include clear-list;
+  @include clear-list;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 278px;
 }
 
 .description__list h3 {
+  margin: 0;
+  padding-bottom: 25px;
   color: $black;
   font-size: 18px;
   line-height: 10px;
+}
+
+.description__list p {
+  margin: 0;
+  color: $text-color;
+}
+
+.about-list__item {
+  margin: 0 auto;
+  padding-bottom: 47px;
+  width: 285px;
 }
 
 /* Временно для сетки */

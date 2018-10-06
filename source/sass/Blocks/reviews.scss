@@ -1,9 +1,38 @@
 .reviews {
+  padding-top: 50px;
   line-height: 30px;
+}
+
+.reviews__list {
+  padding-bottom: 40px;
+}
+
+.reviews__item {
+  margin: 0 auto;
+  text-align: center;
+  width: 267px;
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  &:nth-child(3) {
+    display: none;
+  }
 }
 
 .reviews__item cite {
   color: $black;
   font-size: 18px;
   font-style: normal;
+}
+
+.reviews__text {
+  margin: 0;
+}
+
+.reviews__toggles {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
 }
