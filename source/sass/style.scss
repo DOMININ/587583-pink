@@ -1,4 +1,5 @@
 /* global */
+@import "fonts";
 @import "normalize";
 @import "variables";
 @import "general";
@@ -28,6 +29,7 @@
 
 /* footer */
 @import "Blocks/page-footer";
+@import "Blocks/map";
 
 /*footer-index*/
 @import "Blocks/contacts";

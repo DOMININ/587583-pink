@@ -1,7 +1,14 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+
 .main-nav__list {
   @include clear-list();
   font-size: 18px;
   line-height: 32px;
+  font-weight: 700;
   color: $white;
   text-transform: uppercase;
   background-color: $text-color;
