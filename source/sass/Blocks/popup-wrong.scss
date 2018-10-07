@@ -1,3 +1,17 @@
+.popup-wrong {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popup-wrong p {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 280px;
+}
+
 .popup-wrong b {
   color: $black;
   font-size: 18px;
@@ -7,4 +21,14 @@
   color: $white;
   text-transform: uppercase;
   background-color: $green;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 126px;
+  padding-left: 127px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  border: 0;
+  border-radius: 3px;
 }

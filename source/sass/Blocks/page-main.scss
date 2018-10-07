@@ -1,6 +1,27 @@
+.page-main__header {
+  padding: 40px;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background-color: $top-color;
+  background-position-y: -61px;
+}
+
+.page-main__header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+}
+
 .page-main__title {
-  font-weight: 400;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  width: 280px;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 30px;
+  text-align: center;
 }
 
 .page-main__slogan {
