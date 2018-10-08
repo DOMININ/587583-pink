@@ -16,11 +16,17 @@
 }
 
 .edition__list {
+  position: relative;
+  left: -261px;
   margin: 0 auto;
   line-height: 30px;
   text-transform: uppercase;
-  width: 280px;
+  width: 842px;
   border-collapse: collapse;
+}
+
+.edition__fix {
+  overflow: hidden;
 }
 
 .edition__stroke:first-child {
@@ -61,7 +67,7 @@
     position: absolute;
     content: "";
     top: 20px;
-    right: 19px;
+    right: 14px;
     width: 31px;
     height: 21px;
     background: url("../../img/icon-yes.svg") no-repeat center right;
@@ -72,7 +78,7 @@
     position: absolute;
     content: "";
     top: 16px;
-    right: 19px;
+    right: 16px;
     width: 27px;
     height: 29px;
     background: url("../../img/icon-no.svg") no-repeat center right;

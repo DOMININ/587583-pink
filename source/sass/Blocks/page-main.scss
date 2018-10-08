@@ -5,7 +5,23 @@
   background-position-y: -61px;
 }
 
+.page-main__header-photo {
+  padding: 40px;
+  padding-bottom: 88px;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background-color: $top-color;
+  background-position-y: -61px;
+}
+
 .page-main__header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+}
+
+.page-main__header-photo h1 {
   margin: 0;
   font-size: 24px;
   font-weight: 300;

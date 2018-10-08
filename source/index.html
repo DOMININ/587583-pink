@@ -21,16 +21,16 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="main-nav__list">
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a>Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="form.html">Конкурс</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="#">HTML Academy</a>
               </li>
             </ul>
@@ -120,30 +120,58 @@
         <div class="edition__wrapper slider">
           <h2 class="visually-hidden">Тип издания</h2>
           <div class="slider__list">
-            <table class="edition__list slider__item">
-              <tr class="edition__stroke">
-                <td class="edition__item edition__item-border edition__item--hit">
-                  <p>Стандарт</p>
-                  <p class="edition__banner">Хит</p>
-                  <p>3,99 USD</p>
-                </td>
-              </tr>
-              <tr class="edition__stroke">
-                <td class="edition__item edition__item-border-top edition__item--yes">
-                  Розовый фильтр
-                </td>
-              </tr>
-              <tr class="edition__stroke">
-                <td class="edition__item edition__item--yes">
-                  Смайлики
-                </td>
-              </tr>
-              <tr class="edition__stroke">
-                <td class="edition__item edition__item--no">
-                  Комментарии
-                </td>
-              </tr>
-            </table>
+            <div class="edition__fix">
+              <table class="edition__list slider__item">
+                <tr class="edition__stroke">
+                  <td class="edition__item edition__item-border">
+                    <p>База</p>
+                    <p>1,99 USD</p>
+                  </td>
+                  <td class="edition__item edition__item-border edition__item--hit">
+                    <p>Стандарт</p>
+                    <p class="edition__banner">Хит</p>
+                    <p>3,99 USD</p>
+                  </td>
+                  <td class="edition__item edition__item-border">
+                    <p>Анлим</p>
+                    <p>9,99 USD</p>
+                  </td>
+                </tr>
+                <tr class="edition__stroke">
+                  <td class="edition__item edition__item-border-top edition__item--yes">
+                    Розовый фильтр
+                  </td>
+                  <td class="edition__item edition__item-border-top edition__item--yes">
+                    Розовый фильтр
+                  </td>
+                  <td class="edition__item edition__item-border-top edition__item--yes">
+                    Розовый фильтр
+                  </td>
+                </tr>
+                <tr class="edition__stroke">
+                  <td class="edition__item edition__item--no">
+                    Смайлики
+                  </td>
+                  <td class="edition__item edition__item--yes">
+                    Смайлики
+                  </td>
+                  <td class="edition__item edition__item--yes">
+                    Смайлики
+                  </td>
+                </tr>
+                <tr class="edition__stroke">
+                  <td class="edition__item edition__item--no">
+                    Комментарии
+                  </td>
+                  <td class="edition__item edition__item--no">
+                    Комментарии
+                  </td>
+                  <td class="edition__item edition__item--yes">
+                    Комментарии
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
           <p class="edition__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
