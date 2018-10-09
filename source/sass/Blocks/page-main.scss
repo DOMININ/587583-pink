@@ -1,6 +1,6 @@
 .page-main__header {
   padding: 40px;
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   background-color: $top-color;
   background-position-y: -61px;
 }
@@ -8,7 +8,7 @@
 .page-main__header-photo {
   padding: 40px;
   padding-bottom: 88px;
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   background-color: $top-color;
   background-position-y: -61px;
 }
@@ -38,6 +38,10 @@
   font-weight: 300;
   line-height: 30px;
   text-align: center;
+}
+
+.page-main__title p {
+  margin: 0;
 }
 
 .page-main__slogan {

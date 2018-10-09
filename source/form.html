@@ -15,7 +15,7 @@
               <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74" height="22">
             </a>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
               <li class="main-nav__item">
@@ -102,15 +102,15 @@
           <p>С каким приложением путешествовали?</p>
           <ul class="form-land__list">
             <li class="form-land__item">
-              <input class="visually-hidden form-land__checkbox" type="radio" name="iOS" id="iOS" checked>
+              <input class="visually-hidden form-land__radio" type="radio" name="app" id="iOS" checked>
               <label for="iOS">Pink для iOS</label>
             </li>
             <li class="form-land__item">
-              <input class="visually-hidden form-land__checkbox" type="radio" name="android" id="android">
+              <input class="visually-hidden form-land__radio" type="radio" name="app" id="android">
               <label for="android">Pink на Android</label>
             </li>
             <li class="form-land__item">
-              <input class="visually-hidden form-land__checkbox" type="radio" name="windows" id="windows">
+              <input class="visually-hidden form-land__radio" type="radio" name="app" id="windows">
               <label for="windows">Windows Phone</label>
             </li>
           </ul>
@@ -177,5 +177,6 @@
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <a href="#" class="popup-wrong__close-window">Ок</a>
     </section>
+    <script src="js/menuToggle.js"></script>
   </body>
 </html>

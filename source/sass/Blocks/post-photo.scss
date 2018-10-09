@@ -1,5 +1,15 @@
 .post-photo {
+  position: relative;
   background-color: $grey-light;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 183px;
+    width: 100%;
+    border-top: 1px solid #dddfe0;
+    border-bottom: 1px solid #dddfe0;
+  }
 }
 
 .post-photo__title {
@@ -14,24 +24,27 @@
 }
 
 .post-photo__create {
+  position: relative;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
 }
 
 .post-photo__tool-wrapper {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 75px;
   padding-top: 20px;
   width: 200px;
-  justify-content: space-between;
 }
 
 .post-photo__clipping {
   width: 48px;
   height: 47px;
   border: 0;
-  background: url("../../img/icon-editor-crop.svg") no-repeat;
+  background: url("../img/icon-editor-crop.svg") no-repeat;
 }
 
 .post-photo__pouring {
@@ -39,7 +52,7 @@
   width: 49px;
   height: 43px;
   border: 0;
-  background: url("../../img/icon-editor-fill.svg") no-repeat;
+  background: url("../img/icon-editor-fill.svg") no-repeat;
 }
 
 .post-photo__transparency {
@@ -47,14 +60,32 @@
   width: 33px;
   height: 32px;
   border: 0;
-  background: url("../../img/icon-editor-contrast.svg") no-repeat;
+  background: url("../img/icon-editor-contrast.svg") no-repeat;
 }
 
-.post-photo__buttons {
-  padding-top: 40px;
+.post-photo__scale {
+  position: absolute;
+  margin-bottom: -40px;
+  width: 240px;
+  bottom: 0;
+  right: -20px;
+  height: 2px;
+  background: $text-color;
+}
+
+.post-photo__toggle {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: -7px;
+  right: 30px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .post-photo__send {
+  margin-top: 40px;
   margin-bottom: 12px;
   width: 100%;
   font-size: 18px;

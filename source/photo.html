@@ -15,7 +15,7 @@
               <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74" height="22">
             </a>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--opened main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
               <li class="main-nav__item">
@@ -39,7 +39,10 @@
       <div class="page-main__header-photo">
         <h1>Фотографии пользователей</h1>
       </div>
-      <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <div class="page-main__title">
+        <p>Взгляните на фотографии, которые выкладывают пользователи!</p>
+        <p>Видите, как не хватает ваших?</p>
+      </div>
       <section class="share-photo">
         <div class="share-photo__list">
           <article class="share-photo__item">
@@ -68,6 +71,9 @@
               <span class="share-photo__author-name">Левон</span>
               <span class="share-photo__author-time">(5 часов назад)</span>
               <p class="share-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="share-photo__button-like">
+                <span class="visually-hidden">Like</span>
+              </button>
               <p class="share-photo__like share-photo__like--heart">Нравится: 356</p>
             </div>
           </article>
@@ -79,6 +85,9 @@
               <span class="share-photo__author-name">Антон</span>
               <span class="share-photo__author-time">(12 часов назад)</span>
               <p class="share-photo__text">Соседи будут рады!</p>
+              <button class="share-photo__button-like">
+                <span class="visually-hidden">Like</span>
+              </button>
               <p class="share-photo__like share-photo__like--heart">Нравится: 666</p>
             </div>
           </article>
@@ -90,6 +99,9 @@
               <span class="share-photo__author-name">Борис</span>
               <span class="share-photo__author-time">(20 часов назад)</span>
               <p class="share-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="share-photo__button-like">
+                <span class="visually-hidden">Like</span>
+              </button>
               <p class="share-photo__like share-photo__like--heart">Нравится: 215</p>
             </div>
           </article>
@@ -101,6 +113,9 @@
               <span class="share-photo__author-name">Сергей</span>
               <span class="share-photo__author-time">(25 часов назад)</span>
               <p class="share-photo__text">Самая кубанская в мире!</p>
+              <button class="share-photo__button-like">
+                <span class="visually-hidden">Like</span>
+              </button>
               <p class="share-photo__like share-photo__like--heart">Нравится: 4</p>
             </div>
           </article>
@@ -112,6 +127,9 @@
               <span class="share-photo__author-name">Максим</span>
               <span class="share-photo__author-time">(40 часов назад)</span>
               <p class="share-photo__text">Где снег-то?</p>
+              <button class="share-photo__button-like">
+                <span class="visually-hidden">Like</span>
+              </button>
               <p class="share-photo__like share-photo__like--heart">Нравится: 150</p>
             </div>
           </article>
@@ -123,6 +141,9 @@
               <span class="share-photo__author-name">Надежда</span>
               <span class="share-photo__author-time">(45 часов назад)</span>
               <p class="share-photo__text">Всем GM и взаимные лайки!</p>
+              <button class="share-photo__button-like">
+                <span class="visually-hidden">Like</span>
+              </button>
               <p class="share-photo__like share-photo__like--heart">Нравится: 2560</p>
             </div>
           </article>
@@ -206,5 +227,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/menuToggle.js"></script>
   </body>
 </html>

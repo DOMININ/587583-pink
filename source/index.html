@@ -16,11 +16,9 @@
               <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74" height="22">
             </a>
           </div>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <ul class="main-nav__list">
+          <nav class="main-nav main-nav--opened main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
               <li class="main-nav__item">
                 <a>Главная</a>
               </li>
@@ -44,17 +42,17 @@
         <button class="download__button" type="button">Скачать приложение</button>
         <ul class="download__list">
           <li class="download__item">
-            <a href="#" class="download__item download__item--apple">
+            <a href="https://www.apple.com/itunes/working-itunes/market/" class="download__item download__item--apple">
               <span class="visually-hidden">Скачать на iphone</span>
             </a>
           </li>
           <li class="download__item">
-            <a href="#" class="download__item download__item--android">
+            <a href="https://play.google.com/store/apps;hl=ru" class="download__item download__item--android">
               <span class="visually-hidden">Скачать на android</span>
             </a>
           </li>
           <li class="download__item">
-            <a href="#" class="download__item download__item--windows">
+            <a href="https://www.microsoft.com/ru-ru/" class="download__item download__item--windows">
               <span class="visually-hidden">Скачать на windows</span>
             </a>
           </li>
@@ -205,5 +203,6 @@
         <img src="img/bg-map-mobile@1x.png" alt="Адрес на карте" class="map__mini-map" width="320" height="645">
       </section>
     </footer>
+    <script src="js/menuToggle.js"></script>
   </body>
 </html>
