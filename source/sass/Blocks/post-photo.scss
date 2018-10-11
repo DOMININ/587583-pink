@@ -41,26 +41,54 @@
 }
 
 .post-photo__clipping {
-  width: 48px;
-  height: 47px;
   border: 0;
-  background: url("../img/icon-editor-crop.svg") no-repeat;
+  background: #f2f2f2;
+  cursor: pointer;
+
+  &--active path:nth-child(2) {
+    fill: #d22856;
+  }
 }
 
 .post-photo__pouring {
   margin-top: 2px;
-  width: 49px;
-  height: 43px;
   border: 0;
-  background: url("../img/icon-editor-fill.svg") no-repeat;
+  background: #f2f2f2;
+  cursor: pointer;
+
+  &:hover path:nth-child(2),
+  &:focus path:nth-child(2) {
+    fill: #8d949b;
+  }
+
+  &:hover rect,
+  &:focus rect {
+    fill: #8d949b;
+  }
+
+  &:active path:nth-child(2) {
+    fill: $pink;
+  }
+
+  &:active rect {
+    fill: $pink;
+  }
 }
 
 .post-photo__transparency {
   margin-top: 10px;
-  width: 33px;
-  height: 32px;
   border: 0;
-  background: url("../img/icon-editor-contrast.svg") no-repeat;
+  background: #f2f2f2;
+  cursor: pointer;
+
+  &:hover path,
+  &:focus path {
+    fill: #8d949b;
+  }
+
+  &:active path {
+    fill: $pink;
+  }
 }
 
 .post-photo__scale {
@@ -71,6 +99,7 @@
   right: -20px;
   height: 2px;
   background: $text-color;
+  cursor: pointer;
 }
 
 .post-photo__toggle {
@@ -82,6 +111,11 @@
   border: 2px solid $pink;
   border-radius: 50%;
   background-color: #ffffff;
+  cursor: pointer;
+
+  &:active {
+    background-color: $pink;
+  }
 }
 
 .post-photo__send {
@@ -96,6 +130,18 @@
   border-radius: 30px;
   color: $pink;
   background-color: $grey-light;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &:active {
+    color: #e06989;
+    background-color: $pink;
+  }
 }
 
 .post-photo__reset {
@@ -109,4 +155,16 @@
   border-radius: 30px;
   color: #dddfe0;
   background-color: $grey-light;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #b5b9be;
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    color: #cbced2;
+    background-color: #b5b9be;
+  }
 }

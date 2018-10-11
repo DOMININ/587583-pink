@@ -6,6 +6,21 @@
   padding-left: 40px;
 }
 
+.page-footer__pink-logo {
+  &:hover path,
+  &:focus path {
+    fill: #d22856;
+  }
+
+  &:active .page-footer__pink-name {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__feedback {
   margin: 0;
   padding-top: 50px;
@@ -35,8 +50,22 @@
   justify-content: center;
   width: 46px;
   height: 48px;
-  border: 3px solid #e5e5e5;
+  border: 3px solid #e9ebec;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $text-color;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+  }
+
+  &:active .page-footer__icon {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright {
@@ -53,4 +82,13 @@
 
 .website-by-logo {
   padding-top: 4px;
+
+  &:hover path,
+  &:focus path {
+    fill: $text-color;
+  }
+
+  &:active path {
+    fill: #bec2c7;
+  }
 }

@@ -1,5 +1,8 @@
 .map {
   position: relative;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  height: 199px;
+  background-position-y: -446px;
 
   &::before {
     position: absolute;
@@ -9,6 +12,16 @@
     height: 34px;
     width: 320px;
     top: -1px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/icon-map-marker.svg") no-repeat;
+    height: 36px;
+    width: 36px;
+    top: 93px;
+    left: 143px;
   }
 
   & img {

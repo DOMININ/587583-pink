@@ -21,6 +21,15 @@
   background-color: $white;
 }
 
+.form-land__checkbox:hover + label::before,
+.form-land__checkbox:focus + label::before {
+  border-color: $text-color;
+}
+
+.form-land__checkbox:active + label::before {
+  border-color: $pink;
+}
+
 .form-land__checkbox:checked + label::before {
   background: url("../img/icon-checked.svg") no-repeat center;
   background-color: $white;
@@ -47,6 +56,15 @@
   width: 15px;
   background-color: $pink;
   border-radius: 50%;
+}
+
+.form-land__radio:hover + label::before,
+.form-land__radio:focus + label::before {
+  border-color: $text-color;
+}
+
+.form-land__radio:active + label::before {
+  border-color: $pink;
 }
 
 .form-land__field-item p {
@@ -145,6 +163,20 @@
   background-color: $green;
   border: 0;
   border-radius: 3px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form-land__footer-wrapper {
