@@ -24,11 +24,34 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .description {
+    &::before {
+      height: 52px;
+      width: 660px;
+    }
+
+    &::after {
+      width: 268px;
+      height: 481px;
+      left: 98px;
+      background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+    }
+  }
+}
+
 .description__list {
   @include clear-list;
   text-align: center;
   padding-top: 90px;
   padding-bottom: 278px;
+}
+
+@media (min-width: $tablet-width) {
+  .description__list {
+    padding-bottom: 0;
+    text-align: left;
+  }
 }
 
 .description__list h3 {
@@ -50,11 +73,10 @@
   width: 281px;
 }
 
-/* Временно для сетки */
-@media (min-width: $desktop-width) {
-  .description__list {
-    display: flex;
-    justify-content: space-between;
-    width: 940px;
+@media (min-width: $tablet-width) {
+  .description__item {
+    margin: 0;
+    width: 310px;
+    padding-left: 330px;
   }
 }

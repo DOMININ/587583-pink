@@ -39,6 +39,12 @@
   border: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 40px;
+  }
+}
+
 .main-nav__list {
   @include clear-list();
   font-size: 18px;

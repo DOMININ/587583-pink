@@ -15,6 +15,15 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .edition {
+    &::before {
+      height: 52px;
+      width: 660px;
+    }
+  }
+}
+
 .edition__list {
   position: relative;
   left: -261px;
@@ -23,6 +32,13 @@
   text-transform: uppercase;
   width: 842px;
   border-collapse: collapse;
+}
+
+@media (min-width: $tablet-width) {
+  .edition__list {
+    left: 0;
+    width: 620px;
+  }
 }
 
 .edition__fix {
@@ -126,4 +142,10 @@
   margin: 0;
   padding-top: 40px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .edition__toggles {
+    display: none;
+  }
 }

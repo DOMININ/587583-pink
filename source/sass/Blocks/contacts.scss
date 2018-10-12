@@ -21,11 +21,9 @@
   color: $pink;
 }
 
-/* Временно для сетки */
-@media (min-width: $desktop-width) {
-  .contacts__list {
+@media (min-width: $tablet-width) {
+  .contacts__list-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 940px;
   }
 }

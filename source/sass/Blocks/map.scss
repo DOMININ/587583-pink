@@ -28,3 +28,24 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
+    background-position-x: -21px;
+    background-position-y: -347px;
+    height: 306px;
+
+    &::before {
+      background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+      background-size: 100% 100%;
+      width: 660px;
+      height: 70px;
+    }
+
+    &::after {
+      top: 191px;
+      left: 312px;
+    }
+  }
+}

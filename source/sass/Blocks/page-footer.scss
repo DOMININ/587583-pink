@@ -30,6 +30,15 @@
   font-size: 24px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__feedback {
+    margin: 0 auto;
+    width: 369px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
 .page-footer__social {
   margin-top: 35px;
 }
@@ -90,5 +99,23 @@
 
   &:active path {
     fill: #bec2c7;
+  }
+}
+
+.page-footer__under-map {
+  display: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__under-map {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__pink-logo {
+    margin-top: 35px;
   }
 }
