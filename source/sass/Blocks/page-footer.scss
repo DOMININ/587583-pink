@@ -6,6 +6,13 @@
   padding-left: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__pink-logo {
   &:hover path,
   &:focus path {

@@ -3,15 +3,44 @@
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: $tablet-width) {
+  .popup-accept {
+    margin: 0 auto;
+    width: 460px;
+  }
+}
+
 .popup-accept p {
   margin: 0 auto;
   padding-top: 30px;
   width: 280px;
 }
 
+@media (min-width: $tablet-width) {
+  .popup-accept p {
+    width: 306px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup-accept br {
+    display: none;
+  }
+}
+
 .popup-accept b {
   color: $black;
   font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-accept b {
+    display: block;
+    margin: 0 auto;
+    width: 395px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .popup-accept__wrapper {

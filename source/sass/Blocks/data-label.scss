@@ -1,8 +1,23 @@
 .data-label {
   display: block;
   margin-left: 25px;
-  margin-bottom: 5px;
   line-height: 30px;
   text-transform: uppercase;
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .data-label {
+    display: inline;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .data-label-telephone {
+    margin-left: 78px;
+  }
+
+  .data-label-email {
+    margin-left: 78px;
+  }
 }

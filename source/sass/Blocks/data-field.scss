@@ -19,3 +19,23 @@
     border-color: $pink;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .data-field {
+    width: 100%;
+  }
+
+  .data-field-telephone {
+    margin-left: 58px;
+    margin-bottom: 10px;
+    order: -1;
+    width: 400px;
+  }
+
+  .data-field-email {
+    margin-left: 58px;
+    margin-bottom: 10px;
+    order: -1;
+    width: 400px;
+  }
+}
