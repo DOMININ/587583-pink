@@ -12,6 +12,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .post-photo::after {
+    display: none;
+  }
+}
+
 .post-photo__title {
   margin: 0;
   text-align: center;
@@ -23,11 +29,31 @@
   background-color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  .post-photo__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
 .post-photo__create {
   position: relative;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__create {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo-tools {
+    width: 275px;
+  }
 }
 
 .post-photo__tool-wrapper {
@@ -40,6 +66,14 @@
   width: 200px;
 }
 
+@media (min-width: $tablet-width) {
+  .post-photo__tool-wrapper {
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .post-photo__clipping {
   border: 0;
   background: #f2f2f2;
@@ -47,6 +81,43 @@
 
   &--active path:nth-child(2) {
     fill: #d22856;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__tool-clipping {
+    padding-top: 10px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .post-photo__tool-pouring {
+    padding-top: 10px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .post-photo__tool-transparency {
+    padding-top: 10px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #dddfe0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__clipping svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .post-photo__pouring svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .post-photo__transparency svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -75,6 +146,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .post-photo__pouring--active {
+    & path:nth-child(2) {
+      fill: $pink;
+    }
+
+    & rect {
+      fill: $pink;
+    }
+  }
+}
+
 .post-photo__transparency {
   margin-top: 10px;
   border: 0;
@@ -91,7 +174,15 @@
   }
 }
 
-.post-photo__scale {
+@media (min-width: $tablet-width) {
+  .post-photo__transparency--active {
+    & path {
+      fill: $pink;
+    }
+  }
+}
+
+.post-photo__tool-clipping .post-photo__scale {
   position: absolute;
   margin-bottom: -40px;
   width: 240px;
@@ -102,7 +193,7 @@
   cursor: pointer;
 }
 
-.post-photo__toggle {
+.post-photo__tool-clipping .post-photo__toggle {
   position: absolute;
   height: 10px;
   width: 10px;
@@ -115,6 +206,71 @@
 
   &:active {
     background-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__tool-clipping .post-photo__scale {
+    margin-bottom: 0;
+    width: 202px;
+    top: 30px;
+    right: 1px;
+  }
+
+  .post-photo__tool-clipping .post-photo__toggle {
+    top: -6px;
+  }
+
+  .post-photo__tool-pouring .post-photo__scale {
+    position: absolute;
+    width: 202px;
+    top: 81px;
+    right: 1px;
+    height: 2px;
+    background: $text-color;
+    cursor: pointer;
+  }
+
+  .post-photo__tool-pouring .post-photo__toggle {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -6px;
+    right: 165px;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:active {
+      background-color: $pink;
+    }
+  }
+
+  .post-photo__tool-transparency .post-photo__scale {
+    position: absolute;
+    width: 202px;
+    top: 146px;
+    right: 1px;
+    height: 2px;
+    background: $text-color;
+    cursor: pointer;
+  }
+
+  .post-photo__tool-transparency .post-photo__toggle {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -7px;
+    right: 90px;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:active {
+      background-color: $pink;
+    }
   }
 }
 
