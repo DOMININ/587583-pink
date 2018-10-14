@@ -1,13 +1,128 @@
+.page-footer__wrapper {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__pink-logo {
+  &:hover path,
+  &:focus path {
+    fill: #d22856;
+  }
+
+  &:active .page-footer__pink-name {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__feedback {
   margin: 0;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  font-weight: 300;
+  text-align: center;
   font-size: 24px;
 }
 
-.page-footer__social ul {
-  margin: 0;
+@media (min-width: $tablet-width) {
+  .page-footer__feedback {
+    margin: 0 auto;
+    width: 369px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
+.page-footer__social {
+  margin-top: 35px;
+}
+
+.page-footer__social-list {
+  @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
+  width: 177px;
+}
+
+.page-footer__social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $text-color;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+  }
+
+  &:active .page-footer__icon {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 .page-footer__copyright p {
-  line-height: 18px;
+  margin: 0;
+  margin-right: 10px;
+  line-height: 37px;
+}
+
+.website-by-logo {
+  padding-top: 4px;
+
+  &:hover path,
+  &:focus path {
+    fill: $text-color;
+  }
+
+  &:active path {
+    fill: #bec2c7;
+  }
+}
+
+.page-footer__under-map {
+  display: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__under-map {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__pink-logo {
+    margin-top: 35px;
+  }
 }

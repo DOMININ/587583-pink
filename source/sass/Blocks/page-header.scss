@@ -1,13 +1,56 @@
 .page-header {
-  background-color: $top-color;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
-.page-header h1 {
-  font-weight: 400;
-  font-size: 24px;
-  color: $white;
+.page-header--opened {
+  background-color: $text-color;
 }
 
 .page-header__logo {
-  color: $white;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    margin-top: 31px;
+    margin-bottom: 32px;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+
+    &:hover path,
+    &:focus path {
+      fill: $pink;
+    }
+
+    &:active path {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-header__border {
+  border-bottom: 1px solid $black;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
 }

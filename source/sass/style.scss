@@ -1,7 +1,9 @@
 /* global */
+@import "fonts";
 @import "normalize";
 @import "variables";
 @import "general";
+@import "mixins";
 
 /* header */
 @import "Blocks/page-header";
@@ -13,12 +15,16 @@
 /* main-index */
 @import "Blocks/download";
 @import "Blocks/description";
+@import "Blocks/effect";
 @import "Blocks/reviews";
 @import "Blocks/edition";
+@import "Blocks/hand";
+@import "Blocks/no-hand";
 
 /* main-form */
 @import "Blocks/form-land";
 @import "Blocks/data-label";
+@import "Blocks/data-field";
 
 /* main-photo */
 @import "Blocks/share-photo";
@@ -26,6 +32,7 @@
 
 /* footer */
 @import "Blocks/page-footer";
+@import "Blocks/map";
 
 /*footer-index*/
 @import "Blocks/contacts";

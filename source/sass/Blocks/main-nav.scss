@@ -1,7 +1,99 @@
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 24px;
+  background: url("../img/icon-menu-burger.svg");
+
+  &:hover,
+  &:focus {
+    background: url("../img/icon-menu-burger-hover.svg");
+  }
+
+  &:active {
+    background: url("../img/icon-menu-burger-pressed.svg");
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-menu-cross.svg");
+
+  &:hover,
+  &:focus {
+    background: url("../img/icon-menu-cross-hover.svg");
+  }
+
+  &:active {
+    background: url("../img/icon-menu-cross-pressed.svg");
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 40px;
+  }
+}
+
 .main-nav__list {
-  @include clear-list;
+  @include clear-list();
   font-size: 18px;
   line-height: 32px;
+  font-weight: 700;
   color: $white;
   text-transform: uppercase;
+  background-color: $text-color;
+  border-top: 1px solid $black;
+}
+
+.main-nav__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid $black;
+}
+
+.main-nav__item a {
+  color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+}
+
+/* Временно для сетки */
+@media (min-width: $desktop-width) {
+  .main-nav {
+    min-height: 110px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

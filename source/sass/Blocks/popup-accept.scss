@@ -1,10 +1,88 @@
+.popup-accept {
+  text-align: center;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: $tablet-width) {
+  .popup-accept {
+    margin: 0 auto;
+    width: 460px;
+  }
+}
+
+.popup-accept p {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-accept p {
+    width: 306px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup-accept br {
+    display: none;
+  }
+}
+
 .popup-accept b {
   color: $black;
   font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-accept b {
+    display: block;
+    margin: 0 auto;
+    width: 395px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.popup-accept__wrapper {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popup-accept__background {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: $grey-light;
 }
 
 .popup-accept__close-window {
   color: $white;
   text-transform: uppercase;
   background-color: $green;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 67px;
+  padding-left: 67px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  border: 0;
+  border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

@@ -1,0 +1,49 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .effect h3 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+  }
+
+  .effect p {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .effect a {
+    color: $pink;
+    border-bottom: 1px solid $pink;
+  }
+
+  .effect__timer {
+    &::after {
+      position: absolute;
+      content: "24";
+      left: 84px;
+      bottom: 58px;
+      color: $pink;
+      font-size: 96px;
+      line-height: 150px;
+      font-weight: 700;
+    }
+  }
+
+  .effect__text {
+    width: 310px;
+  }
+}
