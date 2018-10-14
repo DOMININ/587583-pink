@@ -1,3 +1,34 @@
+@media (min-width: $tablet-width) {
+  .share-photo__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .share-photo__item-wrapper .share-photo__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+
+    &:nth-child(2n+1) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .share-photo__item-wrapper .share-photo__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    padding-top: 23px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 24px;
+  }
+}
+
 .share-photo__item {
   position: relative;
 
@@ -15,8 +46,21 @@
   width: 280px;
 }
 
+@media (min-width: $tablet-width) {
+  .share-photo__author-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .share-photo__text {
   padding-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .share-photo__text {
+    flex-grow: 1;
+  }
 }
 
 .share-photo__button-like {
@@ -27,11 +71,24 @@
   background: url("../img/icon-heart.svg") no-repeat;
 }
 
+@media (min-width: $tablet-width) {
+  .share-photo__button-like {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+}
+
 .share-photo__like {
   display: inline;
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .share-photo__like {
+    order: -1;
+  }
 }
 
 .share-photo__panorama {
@@ -45,6 +102,12 @@
   background-color: $pink;
 }
 
+@media (min-width: $tablet-width) {
+  .share-photo__panorama {
+    top: 57px;
+  }
+}
+
 .share-photo__wrapper {
   margin-right: 20px;
   margin-left: 20px;
@@ -56,6 +119,32 @@
   background-color: $grey-light;
 }
 
+.share-photo__like-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .share-photo__main-photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .share-photo__name-time {
+    margin-right: 322px;
+    order: -2;
+  }
+
+  .share-photo__like-wrapper {
+    justify-content: space-between;
+    order: -1;
+  }
+
+  .share-photo__no-order {
+    order: 0;
+  }
+}
+
 .share-photo__author-name {
   font-weight: 700;
 }
@@ -64,4 +153,11 @@
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .share-photo__panorama-picture {
+    height: 509px;
+    width: 700px;
+  }
 }
