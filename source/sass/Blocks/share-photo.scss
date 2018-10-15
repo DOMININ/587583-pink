@@ -26,6 +26,7 @@
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 24px;
+    min-height: 107px;
   }
 }
 
@@ -159,5 +160,6 @@
   .share-photo__panorama-picture {
     height: 509px;
     width: 700px;
+    object-fit: cover;
   }
 }
