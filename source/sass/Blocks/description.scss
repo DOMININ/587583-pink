@@ -50,6 +50,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .description {
+    &::before {
+      height: 94px;
+      width: 1200px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .description__list {
   @include clear-list;
   text-align: center;
@@ -61,6 +74,16 @@
   .description__list {
     padding-bottom: 0;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__list {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 350px;
+    width: 940px;
+    text-align: center;
   }
 }
 
@@ -88,5 +111,76 @@
     margin: 0;
     width: 310px;
     padding-left: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__item {
+    position: relative;
+    padding: 0;
+    width: 313px;
+
+    &:last-child h3 {
+      width: 241px;
+    }
+
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
+      height: 302px;
+      right: 0;
+      width: 302px;
+      bottom: 222px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+        background-size: 292px auto;
+      }
+    }
+
+    &:nth-child(2)::before {
+      position: absolute;
+      content: "";
+      background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
+      height: 302px;
+      right: 0;
+      width: 302px;
+      bottom: 222px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+        background-size: 292px auto;
+      }
+    }
+
+    &:last-child::before {
+      position: absolute;
+      content: "";
+      background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
+      height: 302px;
+      right: 0;
+      width: 302px;
+      bottom: 222px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+        background-size: 292px auto;
+      }
+    }
+  }
+
+  .description__item h3 {
+    margin: 0 auto;
+    width: 191px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .description__item p {
+    margin: 0 auto;
+    width: 249px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }

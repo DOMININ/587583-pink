@@ -126,3 +126,30 @@
     margin-top: 35px;
   }
 }
+
+.page-footer__pink-logo-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__pink-logo {
+    display: none;
+  }
+
+  .page-footer__pink-logo-desktop {
+    display: block;
+
+    &:hover path,
+    &:focus path {
+      fill: $pink;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:active .page-footer__fill {
+      fill: #283645;
+    }
+  }
+}

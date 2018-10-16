@@ -41,3 +41,20 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hand {
+    &::after {
+      width: 884px;
+      height: 645px;
+      left: 151px;
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: 830px auto;
+        background-position-x: 106px;
+      }
+    }
+  }
+}

@@ -2,6 +2,10 @@
   display: none;
 }
 
+.effect br:first-child {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .effect {
     display: flex;
@@ -21,7 +25,8 @@
   }
 
   .effect p {
-    margin: 0;
+    margin: 0 auto;
+    width: 308px;
     padding-bottom: 15px;
   }
 
@@ -45,5 +50,37 @@
 
   .effect__text {
     width: 310px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: #f2f2f2;
+  }
+
+  .effect__text {
+    width: 570px;
+  }
+
+  .effect__text p {
+    margin: 0;
+    width: 526px;
+    font-size: 18px;
+  }
+
+  .effect__text br:last-child {
+    display: none;
+  }
+
+  .effect__text a {
+    font-size: 18px;
+  }
+
+  .effect__timer {
+    &::after {
+      left: 190px;
+    }
   }
 }

@@ -64,3 +64,63 @@
   text-align: center;
   padding-bottom: 40px;
 }
+
+.reviews__buttons {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+    padding-top: 150px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 49px;
+      left: 550px;
+      width: 79px;
+      height: 64px;
+      background: url("../img/icon-quotes.svg") no-repeat;
+    }
+  }
+
+  .reviews__item {
+    width: 688px;
+  }
+
+  .reviews__item p {
+    width: 686px;
+    font-size: 18px;
+  }
+
+  .reviews__item cite {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__buttons {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    border: 0;
+    cursor: pointer;
+
+    &--previous {
+      top: 174px;
+      left: 130px;
+      background: url("../img/icon-review-arrow-left.svg");
+    }
+
+    &--next {
+      top: 174px;
+      right: 130px;
+      background: url("../img/icon-review-arrow-right.svg");
+    }
+  }
+}

@@ -22,3 +22,15 @@
     color: $white;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .no-hand {
+    padding-left: 130px;
+  }
+
+  .no-hand__title {
+    padding-left: 30px;
+    font-size: 50px;
+    width: 239px;
+  }
+}

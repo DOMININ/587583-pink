@@ -4,6 +4,13 @@
   z-index: 1;
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-header--opened {
   background-color: $text-color;
 }
@@ -32,6 +39,30 @@
   }
 
   .page-header__logo-tablet {
+    display: block;
+
+    &:hover path,
+    &:focus path {
+      fill: $pink;
+    }
+
+    &:active path {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
     display: block;
 
     &:hover path,

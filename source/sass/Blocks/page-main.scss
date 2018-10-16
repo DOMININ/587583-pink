@@ -159,3 +159,14 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .page-main__slogan {
+    font-size: 50px;
+  }
+
+  .page-main__slogan p:last-child {
+    width: 399px;
+  }
+}
