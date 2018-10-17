@@ -78,7 +78,7 @@
       position: absolute;
       content: "";
       top: 49px;
-      left: 550px;
+      left: 432px;
       width: 79px;
       height: 64px;
       background: url("../img/icon-quotes.svg") no-repeat;
@@ -113,14 +113,34 @@
 
     &--previous {
       top: 174px;
-      left: 130px;
+      left: 70px;
+      opacity: 0.4;
       background: url("../img/icon-review-arrow-left.svg");
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
 
     &--next {
       top: 174px;
-      right: 130px;
+      right: 70px;
+      opacity: 0.4;
       background: url("../img/icon-review-arrow-right.svg");
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
   }
 }

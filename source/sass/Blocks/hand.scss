@@ -45,9 +45,9 @@
 @media (min-width: $desktop-width) {
   .hand {
     &::after {
-      width: 884px;
       height: 645px;
-      left: 151px;
+      width: 884px;
+      left: 27px;
       background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

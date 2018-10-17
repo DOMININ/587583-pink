@@ -53,7 +53,6 @@
 
 .main-nav__list {
   @include clear-list();
-  display: flex;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
