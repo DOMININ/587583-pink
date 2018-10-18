@@ -39,3 +39,16 @@
     width: 400px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .data-field-telephone {
+    margin-left: 60px;
+    width: 269px;
+  }
+
+  .data-field-email {
+    margin-right: 118px;
+    width: 269px;
+    margin-left: 4px;
+  }
+}

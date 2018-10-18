@@ -12,6 +12,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .popup-wrong {
+    width: 780px;
+  }
+}
+
 .popup-wrong p {
   margin: 0 auto;
   padding-top: 30px;

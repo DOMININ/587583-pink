@@ -300,6 +300,95 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-land__field-item--field {
+    margin-left: 10px;
+  }
+
+  .form-land__field-item--field .form-land__item {
+    width: 435px;
+  }
+
+  .form-land__field-item--radio {
+    margin: 0;
+    margin-left: 70px;
+    margin-right: 10px;
+  }
+
+  .form-land__field-item--radio .form-land__item {
+    width: 361px;
+  }
+
+  .form-land__field-item--contact {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 940px;
+  }
+
+  .form-land__field-item--contact .form-land__list {
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      top: 0px;
+      right: 500px;
+    }
+  }
+
+  .form-land__field-item--contact .form-land__item {
+    width: 435px;
+  }
+
+  .form-land__field-item--contact .form-land__item:last-child {
+    margin: 0;
+  }
+
+  .form-land__field-item--check {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 940px;
+  }
+
+  .form-land__field-item--check .form-land__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-land__field-item--check .form-land__item {
+    width: 231px;
+  }
+
+  .form-land__field-item--check .form-land__item:first-child {
+    order: 1;
+  }
+
+  .form-land__field-item--check .form-land__item:nth-child(2) {
+    order: 4;
+  }
+
+  .form-land__field-item--check .form-land__item:nth-child(3) {
+    order: 2;
+  }
+
+  .form-land__field-item--check .form-land__item:nth-child(4) {
+    order: 5;
+  }
+
+  .form-land__field-item--check .form-land__item:nth-child(5) {
+    order: 3;
+  }
+
+  .form-land__field-item--check .form-land__item:last-child {
+    order: 6;
+  }
+
+  .form-land__field-item--area {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 940px;
+  }
+}
+
 .form-land__button {
   width: 100%;
   padding-top: 20px;
@@ -399,10 +488,24 @@
   }
 }
 
-/* Временно для сетки */
+@media (min-width: $desktop-width) {
+  .form-land {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-land__footer-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-land__footer-wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 940px;
   }
 }
