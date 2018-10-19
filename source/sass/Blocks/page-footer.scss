@@ -46,10 +46,6 @@
   }
 }
 
-.page-footer__social {
-  margin-top: 35px;
-}
-
 .page-footer__social-list {
   @include clear-list;
   display: flex;
@@ -87,7 +83,6 @@
 .page-footer__copyright {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
 }
 
 .page-footer__copyright p {
@@ -111,19 +106,14 @@
 
 .page-footer__under-map {
   display: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 37px;
+  padding: 35px 20px;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__under-map {
     display: flex;
     justify-content: space-between;
-  }
-
-  .page-footer__pink-logo {
-    margin-top: 35px;
   }
 }
 
