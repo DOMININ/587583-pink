@@ -1,5 +1,7 @@
 .slider__toggle {
   display: inline-block;
+  margin-top: 3px;
+  margin-right: 3px;
   height: 6px;
   width: 6px;
   background-color: #bec2c7;
@@ -17,6 +19,7 @@
   }
 
   &--active {
+    margin: 0;
     border: 3px solid #283645;
     background-color: transparent;
   }

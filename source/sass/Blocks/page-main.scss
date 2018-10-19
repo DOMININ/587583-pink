@@ -181,12 +181,14 @@
   font-weight: 300;
 
   &:first-child {
-    padding-top: 50px;
+    padding-top: 40px;
+    line-height: 29px;
   }
 
   &:last-child {
-    padding-top: 45px;
-    padding-bottom: 38px;
+    padding-top: 30px;
+    line-height: 28px;
+    padding-bottom: 36px;
   }
 }
 
