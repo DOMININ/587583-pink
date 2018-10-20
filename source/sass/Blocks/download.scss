@@ -27,7 +27,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/bg-back-desktop@2x.jpg");
-      background-position-x: -800px;
+      background-position: center top;
       background-size: 2590px auto;
     }
   }

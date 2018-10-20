@@ -16,7 +16,8 @@
     background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
     width: 266px;
     height: 286px;
-    left: 0;
+    left: 50%;
+    margin-left: -160px;
     bottom: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

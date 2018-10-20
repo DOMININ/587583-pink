@@ -428,8 +428,8 @@
 }
 
 .form-land__footer-wrapper {
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -461,6 +461,8 @@
   .form-land {
     display: flex;
     flex-direction: column;
+    max-width: 660px;
+    margin: 0 auto;
   }
 
   .form-land__field-item:nth-child(1) {
@@ -492,6 +494,7 @@
   .form-land {
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 960px;
   }
 }
 
@@ -499,6 +502,7 @@
   .form-land__footer-wrapper {
     display: flex;
     justify-content: space-between;
+    width: 660px;
   }
 }
 

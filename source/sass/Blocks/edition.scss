@@ -36,17 +36,16 @@
 
 .edition__list {
   position: relative;
-  left: -261px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
   line-height: 30px;
   text-transform: uppercase;
-  width: 842px;
+  width: 265%;
   border-collapse: collapse;
 }
 
 @media (min-width: $tablet-width) {
   .edition__list {
-    left: 0;
     width: 620px;
   }
 }

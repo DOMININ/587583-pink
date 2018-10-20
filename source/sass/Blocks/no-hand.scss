@@ -1,3 +1,15 @@
+.no-hand {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .no-hand {
+    margin: 0;
+    max-width: 320px;
+  }
+}
+
 .no-hand__title {
   display: none;
 }

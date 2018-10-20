@@ -38,15 +38,20 @@
 
 .post-photo__create {
   position: relative;
+  text-align: center;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .post-photo__create {
     display: flex;
     justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
   }
 }
 

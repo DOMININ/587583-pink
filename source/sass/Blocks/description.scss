@@ -39,7 +39,8 @@
     &::after {
       width: 268px;
       height: 481px;
-      left: 98px;
+      left: 50%;
+      margin-left: -310px;
       background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
