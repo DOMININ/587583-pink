@@ -19,44 +19,31 @@
 
 .page-header__logo {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 31px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__logo {
-    margin-top: 31px;
-    margin-bottom: 32px;
-  }
+.page-header__logo svg {
+  margin-left: -70px;
 }
 
 .page-header__logo-tablet {
   display: none;
 }
 
+.page-header__logo-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .page-header__logo-mobile {
-    display: none;
+  .page-header__logo svg {
+    margin: 0;
   }
 
   .page-header__logo-tablet {
     display: block;
-
-    &:hover path,
-    &:focus path {
-      fill: $pink;
-    }
-
-    &:active path {
-      fill: $white;
-      opacity: 0.3;
-    }
   }
-}
-
-.page-header__logo-desktop {
-  display: none;
 }
 
 @media (min-width: $desktop-width) {
@@ -66,16 +53,6 @@
 
   .page-header__logo-desktop {
     display: block;
-
-    &:hover path,
-    &:focus path {
-      fill: $pink;
-    }
-
-    &:active path {
-      fill: $white;
-      opacity: 0.3;
-    }
   }
 }
 

@@ -55,6 +55,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .post-photo__create {
+    max-width: 920px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .post-photo-tools {
     width: 275px;

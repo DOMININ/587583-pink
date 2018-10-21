@@ -11,18 +11,17 @@
   }
 }
 
-.page-footer__pink-logo {
-  &:hover path,
-  &:focus path {
-    fill: #d22856;
+.page-footer__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-mobile-glass {
+    display: none;
   }
 
-  &:active .page-footer__pink-name {
-    fill: #283645;
-  }
-
-  &:active {
-    opacity: 0.3;
+  .page-footer__logo-desktop {
+    display: block;
   }
 }
 
@@ -72,10 +71,6 @@
   &:active {
     border-color: #e9ebec;
   }
-
-  &:active .page-footer__icon {
-    opacity: 0.3;
-  }
 }
 
 .page-footer__copyright {
@@ -91,53 +86,10 @@
 
 .website-by-logo {
   padding-top: 4px;
-
-  &:hover path,
-  &:focus path {
-    fill: $text-color;
-  }
-
-  &:active path {
-    fill: #bec2c7;
-  }
 }
 
 .page-footer__under-map {
   display: none;
   padding: 35px 20px;
   align-items: center;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer__under-map {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.page-footer__pink-logo-desktop {
-  display: none;
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__pink-logo {
-    display: none;
-  }
-
-  .page-footer__pink-logo-desktop {
-    display: block;
-
-    &:hover path,
-    &:focus path {
-      fill: $pink;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    &:active .page-footer__fill {
-      fill: #283645;
-    }
-  }
 }
