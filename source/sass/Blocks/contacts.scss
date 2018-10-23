@@ -44,6 +44,17 @@
     margin-left: 13px;
     padding-top: 4px;
     padding-bottom: 26px;
+
+    &:hover,
+    &:focus {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
   }
 
   &--address {
@@ -54,6 +65,11 @@
 
 .contacts__text a {
   color: $pink;
+}
+
+.contacts__list-wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {

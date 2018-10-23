@@ -8,6 +8,15 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    max-width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -73,6 +82,14 @@
   }
 }
 
+.page-footer__social-button svg {
+  color: $pink;
+}
+
+.page-footer__social-button:active svg {
+  opacity: 0.3;
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
@@ -84,12 +101,43 @@
   line-height: 37px;
 }
 
-.website-by-logo {
-  padding-top: 4px;
-}
-
 .page-footer__under-map {
   display: none;
   padding: 35px 20px;
   align-items: center;
+}
+
+.page-footer__logo:hover .page-footer__logo-desktop,
+.page-footer__logo:focus .page-footer__logo-desktop {
+  color: $pink;
+}
+
+.page-footer__logo:active .page-footer__logo-desktop {
+  color: #283645;
+}
+
+.page-footer__logo:hover .page-footer__logo-mobile > path,
+.page-footer__logo:focus .page-footer__logo-mobile > path {
+  fill: #d22856;
+}
+
+.page-footer__logo:active .page-footer__logo-mobile > path {
+  fill: #283645;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}
+
+.page-footer__copyright-academy {
+  color: $pink;
+}
+
+.page-footer__copyright-academy:hover,
+.page-footer__copyright-academy:focus {
+  color: #283645;
+}
+
+.page-footer__copyright-academy:active {
+  opacity: 0.3;
 }

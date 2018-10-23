@@ -37,6 +37,7 @@
   top: 20px;
   right: 19px;
   border: 0;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,15 +87,16 @@
   }
 }
 
-.main-nav__item a {
+.main-nav__item:not(.main-nav__item--active) a {
   color: $white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $pink;
   }
 
   &:active {
-    color: $pink;
+    color: #ffffff;
     opacity: 0.3;
   }
 }

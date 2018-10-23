@@ -67,6 +67,18 @@
   border-color: $pink;
 }
 
+.form-land__field-item textarea {
+  outline: none;
+
+  &:hover {
+    border-color: $text-color;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
+}
+
 .form-land__field-item p {
   margin: 0 auto;
   padding-bottom: 40px;
