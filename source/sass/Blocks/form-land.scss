@@ -13,10 +13,10 @@
 .form-land__checkbox + label::before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   top: -9px;
-  left: -52px;
+  left: -69px;
   border: 2px solid #e5e5e5;
   background-color: $white;
 }
@@ -38,10 +38,10 @@
 .form-land__radio + label::before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
-  top: -10px;
-  left: -52px;
+  height: 35px;
+  width: 35px;
+  top: -6px;
+  left: -69px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   background-color: $white;
@@ -50,8 +50,8 @@
 .form-land__radio:checked + label::after {
   position: absolute;
   content: "";
-  top: 4px;
-  left: -37px;
+  top: 5px;
+  left: -57px;
   height: 15px;
   width: 15px;
   background-color: $pink;
@@ -81,7 +81,7 @@
 
 .form-land__field-item p {
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 47px;
   width: 252px;
   line-height: 18px;
   font-size: 14px;
@@ -139,11 +139,11 @@
   &--field {
     & .form-land__item {
       margin: 0 auto;
-      margin-bottom: 25px;
+      margin-bottom: 17px;
       width: 280px;
 
       &:last-child {
-        padding-bottom: 40px;
+        padding-bottom: 25px;
       }
     }
   }
@@ -151,57 +151,69 @@
   &--contact {
     & .form-land__item {
       margin: 0 auto;
-      margin-bottom: 25px;
+      margin-bottom: 17px;
       width: 280px;
 
       &:last-child {
-        padding-bottom: 40px;
+        padding-bottom: 25px;
       }
     }
   }
 
   &--check {
-    padding-top: 40px;
-    margin-bottom: 35px;
+    padding-top: 38px;
     background-color: $grey-light;
-    padding-bottom: 20px;
 
     & .form-land__item {
       margin: 0 auto;
-      margin-bottom: 35px;
-      padding-left: 70px;
+      margin-bottom: 58px;
+      padding-left: 89px;
       font-size: 18px;
-      width: 250px;
+
+      &:last-child {
+        padding-bottom: 49px;
+        margin-bottom: 32px;
+      }
     }
   }
 
   &--radio {
-    padding-top: 40px;
-    margin-bottom: 35px;
+    padding-top: 38px;
+    margin-bottom: 38px;
     background-color: $grey-light;
     padding-bottom: 20px;
 
     & .form-land__item {
       margin: 0 auto;
-      margin-bottom: 35px;
-      padding-left: 70px;
+      margin-bottom: 51px;
+      padding-left: 89px;
       font-size: 18px;
-      width: 250px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
     }
+  }
+
+  &--radio p {
+    padding-bottom: 42px;
   }
 
   &--area {
     padding-right: 20px;
     padding-left: 20px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 
     & p {
-      padding-bottom: 20px;
+      padding-bottom: 16px;
     }
 
     & textarea {
-      padding: 14px;
+      padding-top: 14px;
+      padding-bottom: 124px;
+      padding-left: 18px;
+      padding-right: 12px;
       width: 246px;
       font-size: 18px;
       line-height: 30px;
@@ -403,8 +415,8 @@
 
 .form-land__button {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 17px;
   padding-right: 45px;
   padding-left: 45px;
   font-size: 18px;
@@ -442,6 +454,7 @@
 .form-land__footer-wrapper {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -452,7 +465,7 @@
 
 .form-land__obligatorily {
   margin: 0;
-  margin-top: 40px;
+  margin-top: 35px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;

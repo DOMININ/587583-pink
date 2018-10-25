@@ -5,7 +5,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 183px;
+    bottom: 200px;
     width: 100%;
     border-top: 1px solid #dddfe0;
     border-bottom: 1px solid #dddfe0;
@@ -23,8 +23,10 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 41px;
   font-size: 14px;
+  line-height: 30px;
   font-weight: 300;
   background-color: $white;
 }
@@ -39,8 +41,8 @@
 .post-photo__create {
   position: relative;
   text-align: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 21px;
+  padding-left: 19px;
   padding-top: 20px;
   max-width: 280px;
   margin: 0 auto;
@@ -72,9 +74,9 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 75px;
-  padding-top: 20px;
-  width: 200px;
+  margin-bottom: 63px;
+  padding-top: 33px;
+  width: 206px;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,6 +89,7 @@
 
 .post-photo__clipping {
   border: 0;
+  padding: 0;
   background: #f2f2f2;
   cursor: pointer;
 
@@ -195,10 +198,10 @@
 
 .post-photo__tool-clipping .post-photo__scale {
   position: absolute;
-  margin-bottom: -40px;
+  margin-bottom: -33px;
   width: 240px;
   bottom: 0;
-  right: -20px;
+  right: -16px;
   height: 2px;
   background: $text-color;
   cursor: pointer;
@@ -209,7 +212,7 @@
   height: 10px;
   width: 10px;
   top: -7px;
-  right: 30px;
+  right: 33px;
   border: 2px solid $pink;
   border-radius: 50%;
   background-color: #ffffff;
@@ -286,12 +289,12 @@
 }
 
 .post-photo__send {
-  margin-top: 40px;
+  margin-top: 43px;
   margin-bottom: 12px;
   width: 100%;
   font-size: 18px;
   line-height: 18px;
-  padding: 12px 70px;
+  padding: 15px 70px;
   font-weight: 700;
   border: 3px solid $pink;
   border-radius: 30px;
@@ -316,7 +319,7 @@
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 18px;
-  padding: 12px 70px;
+  padding: 16px 70px;
   font-weight: 700;
   border: 3px solid #dddfe0;
   border-radius: 30px;
