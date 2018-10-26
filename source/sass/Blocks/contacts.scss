@@ -11,6 +11,8 @@
 @media (min-width: $tablet-width) {
   .contacts__feedback {
     margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 42px;
     width: 369px;
     font-size: 40px;
     line-height: 49px;
@@ -41,8 +43,8 @@
   color: $pink;
 
   &--email {
-    margin-left: 13px;
     padding-top: 4px;
+    padding-left: 4px;
     padding-bottom: 26px;
 
     &:hover,
@@ -63,6 +65,16 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    padding-top: 6px;
+
+    &--address {
+      padding-bottom: 29px;
+    }
+  }
+}
+
 .contacts__text a {
   color: $pink;
 }
@@ -76,6 +88,9 @@
   .contacts__list-wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 618px;
+    padding-bottom: 22px;
   }
 }
 

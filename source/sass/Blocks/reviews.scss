@@ -46,10 +46,14 @@
   }
 
   .reviews__text {
+    font-size: 18px;
+    padding-top: 49px;
     order: 1;
   }
 
   .reviews__item cite {
+    font-size: 20px;
+    padding-top: 36px;
     order: 2;
   }
 
@@ -67,6 +71,12 @@
   width: 62px;
   text-align: center;
   padding-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__toggles {
+    padding-bottom: 23px;
+  }
 }
 
 .reviews__buttons {

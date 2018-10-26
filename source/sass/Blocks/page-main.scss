@@ -200,9 +200,15 @@
   .page-main__slogan p {
     font-weight: 300;
     line-height: 50px;
+    
+    &:first-child {
+      padding-top: 58px;
+    }
 
     &:last-child {
-      padding-top: 0;
+      padding-top: 11px;
+      padding-bottom: 48px;
+      line-height: 47px;
       width: 334px;
     }
   }

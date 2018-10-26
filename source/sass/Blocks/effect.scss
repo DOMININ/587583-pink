@@ -2,10 +2,6 @@
   display: none;
 }
 
-.effect br:first-child {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
@@ -13,7 +9,8 @@
 
   .effect h3 {
     margin: 0;
-    padding-bottom: 15px;
+    padding-top: 37px;
+    padding-bottom: 10px;
     font-size: 30px;
     line-height: 36px;
     color: $black;
@@ -22,7 +19,8 @@
   .effect p {
     margin: 0 auto;
     width: 308px;
-    padding-bottom: 15px;
+    padding-right: 2px;
+    padding-bottom: 9px;
   }
 
   .effect a {
@@ -45,6 +43,10 @@
 
   .effect__text {
     width: 310px;
+  }
+
+  .effect__description br:not(:last-child) {
+    display: none;
   }
 }
 
@@ -86,7 +88,7 @@
     max-width: 620px;
     margin: 0 auto;
     position: relative;
-    padding-top: 70px;
+    padding-top: 58px;
     padding-right: 20px;
     padding-left: 20px;
   }

@@ -58,6 +58,14 @@
   margin-left: 19px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    margin-top: 27px;
+    margin-bottom: 34px;
+    margin-left: 20px;
+  }
+}
+
 .page-header__logotype {
   margin-left: -70px;
 }

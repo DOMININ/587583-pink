@@ -1,7 +1,7 @@
 .map {
   position: relative;
   background: url("../img/bg-map-mobile@1x.png") no-repeat;
-  height: 199px;
+  padding-bottom: 199px;
   background-position-y: -446px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -22,11 +22,12 @@
   &::after {
     position: absolute;
     content: "";
-    background: url("../../img/icon-map-marker.svg") no-repeat;
+    background: url("../img/icon-map-marker.svg") no-repeat;
     height: 36px;
     width: 36px;
     top: 93px;
     left: 143px;
+    z-index: 1;
   }
 
   & img {
@@ -39,7 +40,7 @@
     background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
     background-position-x: -21px;
     background-position-y: -347px;
-    height: 306px;
+    padding-bottom: 373px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -64,7 +65,6 @@
   .map {
     background: url("../img/bg-map-desktop@1x.jpg") no-repeat;
     background-position-y: -260px;
-    height: 520px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");

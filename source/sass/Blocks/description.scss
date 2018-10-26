@@ -65,6 +65,10 @@
   }
 }
 
+.description br {
+  display: none;
+}
+
 .description__list {
   @include clear-list;
   text-align: center;
@@ -74,6 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .description__list {
+    padding-top: 81px;
     padding-bottom: 0;
     text-align: left;
   }
@@ -113,6 +118,7 @@
     margin: 0;
     width: 310px;
     padding-left: 330px;
+    padding-bottom: 42px;
   }
 }
 

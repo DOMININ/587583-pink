@@ -33,7 +33,7 @@
     max-width: 660px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 203px;
+    padding-top: 237px;
     margin-top: -110px;
   }
 }
@@ -76,6 +76,9 @@
 
 @media (min-width: $tablet-width) {
   .download__button {
+    position: relative;
+    top: -14px;
+    margin-top: 10px;
     width: 300px;
   }
 }
@@ -92,8 +95,12 @@
 
 @media (min-width: $tablet-width) {
   .download__list {
-    padding-right: 50px;
-    padding-left: 45px;
+    position: relative;
+    top: 6px;
+    padding-top: 26px;
+    padding-bottom: 36px;
+    padding-right: 47px;
+    padding-left: 46px;
   }
 }
 
@@ -128,6 +135,8 @@
 
 @media (min-width: $tablet-width) {
   .download p {
+    position: relative;
+    top: 6px;
     font-size: 18px;
     font-weight: 300;
     width: 300px;
