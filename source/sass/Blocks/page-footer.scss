@@ -1,9 +1,9 @@
-.page-footer {
+.page-footer-index {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer-index {
     display: block;
   }
 }
@@ -18,10 +18,15 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 37px;
+    width: 620px;
+    padding-top: 72px;
     padding-bottom: 2px;
     max-width: 620px;
     margin: 0 auto;
+
+    &--photo {
+      padding-top: 37px;
+    }
   }
 }
 

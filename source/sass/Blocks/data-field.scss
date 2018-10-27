@@ -23,13 +23,14 @@
 @media (min-width: $tablet-width) {
   .data-field {
     width: 100%;
+    padding-left: 18px;
   }
 
   .data-field-telephone {
     margin-left: 58px;
     margin-bottom: 10px;
     order: -1;
-    width: 400px;
+    width: 399px;
   }
 
   .data-field-email {
