@@ -19,9 +19,7 @@
   .edition {
     padding-top: 88px;
     padding-bottom: 68px;
-  }
 
-  .edition {
     &::before {
       height: 52px;
       width: 660px;
@@ -31,6 +29,9 @@
 
 @media (min-width: $desktop-width) {
   .edition {
+    padding-top: 138px;
+    padding-bottom: 94px;
+
     &::before {
       height: 76px;
       width: 960px;
@@ -110,13 +111,14 @@
 
 @media (min-width: $desktop-width) {
   .edition__stroke:first-child .edition__item {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 17px;
+    padding-bottom: 20px;
   }
 
   .edition__stroke:not(:first-child) .edition__item {
-    padding-top: 16px;
+    padding-top: 13px;
     padding-bottom: 16px;
+    padding-left: 21px;
   }
 }
 
@@ -174,13 +176,13 @@
 @media (min-width: $desktop-width) {
   .edition__item {
     &--yes::after {
-      top: 29px;
-      right: 58px;
+      top: 22px;
+      right: 101px;
     }
 
     &--no::after {
-      top: 26px;
-      right: 63px;
+      top: 14px;
+      right: 103px;
     }
   }
 }
@@ -284,6 +286,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .edition__item--hit::before {
+    background: url("../img/bg-hit.svg") no-repeat top left;
+  }
+
+  .edition__banner {
+    top: 11px;
+    left: 10px;
+  }
+
   .edition__item p {
     &:first-child {
       font-size: 18px;

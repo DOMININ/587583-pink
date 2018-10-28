@@ -66,6 +66,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     display: flex;
+    width: 631px;
     text-transform: none;
     font-weight: 400;
     background: none;
@@ -83,7 +84,18 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__item {
+    padding-top: 38px;
+    margin-right: 80px;
+    padding-bottom: 10px;
     border: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }
 

@@ -66,6 +66,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin-left: 10px;
+  }
+}
+
 .page-header__logotype {
   margin-left: -70px;
 }

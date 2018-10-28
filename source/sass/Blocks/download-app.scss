@@ -39,7 +39,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .download-app {
+    padding-left: 10px;
+    padding-bottom: 56px;
+  }
+
   .download-app__title {
+    position: relative;
+    top: -166px;
+    line-height: 60px;
     padding-left: 30px;
     font-size: 50px;
     width: 239px;

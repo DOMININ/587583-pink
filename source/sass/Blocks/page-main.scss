@@ -147,7 +147,7 @@
     padding-bottom: 70px;
 
     &--photo {
-    	padding-bottom: 76px;
+      padding-bottom: 76px;
     }
   }
 
@@ -207,7 +207,7 @@
   .page-main__slogan p {
     font-weight: 300;
     line-height: 50px;
-    
+
     &:first-child {
       padding-top: 58px;
     }
@@ -227,7 +227,14 @@
     font-size: 50px;
   }
 
+  .page-main__slogan p:first-child {
+    padding-top: 83px;
+  }
+
   .page-main__slogan p:last-child {
-    width: 399px;
+    width: 417px;
+    line-height: 59px;
+    padding-top: 17px;
+    padding-bottom: 89px;
   }
 }

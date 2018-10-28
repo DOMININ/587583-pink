@@ -41,6 +41,11 @@
     }
   }
 
+  .effect__timer svg {
+    width: 238px;
+    height: 276px;
+  }
+
   .effect__text {
     width: 310px;
   }
@@ -56,6 +61,12 @@
     background-color: #f2f2f2;
   }
 
+  .effect h3 {
+    padding-top: 92px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+
   .effect__text {
     width: 570px;
   }
@@ -63,7 +74,10 @@
   .effect__text p {
     margin: 0;
     width: 526px;
+    padding-left: 15px;
+    padding-bottom: 32px;
     font-size: 18px;
+    line-height: 30px;
   }
 
   .effect__text br:last-child {
@@ -71,13 +85,25 @@
   }
 
   .effect__text a {
+    margin-left: 15px;
     font-size: 18px;
   }
 
   .effect__timer {
     &::after {
-      left: 83px;
+      font-size: 120px;
+      top: 180px;
+      left: 81px;
     }
+  }
+
+  .effect__timer svg {
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__description br:not(:last-child) {
+    display: block;
   }
 }
 
@@ -97,5 +123,8 @@
 @media (min-width: $desktop-width) {
   .effect__wrapper {
     max-width: 920px;
+    padding-top: 66px;
+    padding-bottom: 60px;
+    padding-left: 1px;
   }
 }

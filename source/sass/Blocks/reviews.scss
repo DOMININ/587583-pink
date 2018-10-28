@@ -86,13 +86,14 @@
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
-    padding-top: 150px;
+    padding-top: 136px;
+    padding-bottom: 18px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 49px;
-      left: 432px;
+      top: 72px;
+      left: 443px;
       width: 79px;
       height: 64px;
       background: url("../img/icon-quotes.svg") no-repeat;
@@ -100,16 +101,17 @@
   }
 
   .reviews__item {
-    width: 688px;
+    width: 712px;
   }
 
   .reviews__item p {
-    width: 686px;
+    width: 712px;
     font-size: 18px;
   }
 
   .reviews__item cite {
-    padding-top: 30px;
+    padding-top: 36px;
+    padding-bottom: 2px;
     font-size: 24px;
   }
 
@@ -126,8 +128,8 @@
     cursor: pointer;
 
     &--previous {
-      top: 174px;
-      left: 70px;
+      top: 212px;
+      left: 10px;
       opacity: 0.4;
       background: url("../img/icon-review-arrow-left.svg");
 
@@ -142,8 +144,8 @@
     }
 
     &--next {
-      top: 174px;
-      right: 70px;
+      top: 212px;
+      right: 10px;
       opacity: 0.4;
       background: url("../img/icon-review-arrow-right.svg");
 

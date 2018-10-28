@@ -63,8 +63,10 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    padding-bottom: 501px;
     background: url("../img/bg-map-desktop@1x.jpg") no-repeat;
-    background-position-y: -260px;
+    background-position-y: -277px;
+    background-position-x: -120px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
@@ -79,8 +81,8 @@
     }
 
     &::after {
-      top: 279px;
-      left: 583px;
+      top: 263px;
+      left: 462px;
     }
   }
 }
