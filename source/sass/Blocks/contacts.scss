@@ -103,6 +103,17 @@
 
 .contacts__text a {
   color: $pink;
+
+    &:hover,
+    &:focus {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
 }
 
 .contacts__list-wrapper {
