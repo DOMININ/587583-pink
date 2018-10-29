@@ -27,15 +27,14 @@
 
 @media (min-width: $desktop-width) {
   .page-main__header {
-    padding-top: 171px;
-    padding-bottom: 103px;
-    margin-top: -103px;
+    padding-top: 173px;
+    padding-bottom: 101px;
+    margin-top: -109px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
-      background-position-x: -796px;
     }
   }
 }
@@ -69,14 +68,14 @@
 
 @media (min-width: $desktop-width) {
   .page-main__header-photo {
-    padding-top: 170px;
+    padding-top: 172px;
     padding-bottom: 100px;
-    margin-top: -103px;
+    margin-top: -108px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2500px auto;
+      background-size: 2560px auto;
     }
   }
 }
@@ -158,8 +157,14 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    width: 731px;
+    width: 571px;
     font-size: 18px;
+    padding-bottom: 89px;
+
+    &--form {
+    	width: 756px;
+    	padding-bottom: 78px;
+    }
   }
 
   .page-main__title span {

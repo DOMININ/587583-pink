@@ -90,6 +90,10 @@
   }
 
   .effect__timer {
+    width: 298px;
+    height: 345px;
+    background: url("../img/timer.svg") no-repeat;
+
     &::after {
       font-size: 120px;
       top: 180px;
@@ -124,7 +128,7 @@
   .effect__wrapper {
     max-width: 920px;
     padding-top: 66px;
-    padding-bottom: 60px;
+    padding-bottom: 67px;
     padding-left: 1px;
   }
 }

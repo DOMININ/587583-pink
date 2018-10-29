@@ -26,7 +26,7 @@
     height: 36px;
     width: 36px;
     top: 93px;
-    left: 143px;
+    left: calc(50% - 18px);
     z-index: 1;
   }
 
@@ -60,7 +60,7 @@
 
     &::after {
       top: 191px;
-      left: 312px;
+      left: calc(50% - 18px);
     }
   }
 
@@ -91,7 +91,7 @@
 
     &::after {
       top: 263px;
-      left: 462px;
+      left: calc(50% - 18px);
     }
   }
 

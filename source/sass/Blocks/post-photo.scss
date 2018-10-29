@@ -18,6 +18,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .post-photo {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
 .post-photo__title {
   margin: 0;
   text-align: center;
@@ -38,6 +45,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__title {
+    padding-top: 6px;
+    padding-bottom: 66px;
   }
 }
 
@@ -63,14 +77,26 @@
 
 @media (min-width: $desktop-width) {
   .post-photo__create {
-    padding-left: 20px;
+    padding-top: 53px;
+    padding-left: 80px;
+    padding-right: 60px;
     max-width: 920px;
+  }
+
+  .post-photo__image {
+    padding-top: 4px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .post-photo-tools {
     width: 275px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-photo-tools {
+    width: 414px;
   }
 }
 
@@ -130,6 +156,26 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .post-photo__tool-clipping {
+    padding-left: 3px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  .post-photo__tool-pouring {
+    margin-top: -3px;
+    padding-top: 14px;
+    padding-bottom: 7px;
+  }
+
+  .post-photo__tool-transparency {
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .post-photo__clipping svg {
     width: 24px;
@@ -169,6 +215,23 @@
 
   &:active rect {
     fill: $pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-photo__clipping svg {
+    width: 48px;
+    height: 47px;
+  }
+
+  .post-photo__pouring svg {
+    width: 49px;
+    height: 43px;
+  }
+
+  .post-photo__transparency svg {
+    width: 33px;
+    height: 32px;
   }
 }
 
@@ -305,6 +368,38 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .post-photo__tool-clipping .post-photo__scale {
+    width: 288px;
+    top: 23px;
+    right: 30px;
+  }
+
+  .post-photo__tool-clipping .post-photo__toggle {
+    right: 203px
+  }
+
+  .post-photo__tool-pouring .post-photo__scale {
+    width: 288px;
+    top: 96px;
+    right: 30px;
+  }
+
+  .post-photo__tool-pouring .post-photo__toggle {
+    right: 27px
+  }
+
+  .post-photo__tool-transparency .post-photo__scale {
+    width: 288px;
+    top: 166px;
+    right: 30px;
+  }
+
+  .post-photo__tool-transparency .post-photo__toggle {
+    right: 114px;
+  }
+}
+
 .post-photo__send {
   margin-top: 43px;
   margin-bottom: 12px;
@@ -342,6 +437,23 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .post-photo__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+  }
+
+  .post-photo__send {
+    width: 183px;
+    margin-top: 122px;
+    margin-right: -4px;
+    margin-left: 4px;
+    padding-left: 19px;
+    padding-right: 14px;
+  }
+}
+
 .post-photo__reset {
   width: 100%;
   margin-bottom: 40px;
@@ -375,5 +487,17 @@
     padding: 16px;
     padding-left: 69px;
     padding-right: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-photo__reset {
+    width: 183px;
+    margin-top: 122px;
+    margin-bottom: 22px;
+    margin-right: 0;
+    margin-left: -4px;
+    padding-left: 19px;
+    padding-right: 14px;
   }
 }

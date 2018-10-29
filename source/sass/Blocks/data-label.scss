@@ -25,7 +25,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .data-label {
+    margin-bottom: -4px;
+  }
+
   .data-label-email {
-    margin-left: 78px;
+    margin-left: 21px;
   }
 }

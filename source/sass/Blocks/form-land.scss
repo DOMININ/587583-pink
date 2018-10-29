@@ -157,6 +157,18 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-land__field-item:nth-child(5) p {
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-land__field-item:nth-child(3) p {
+    padding-bottom: 23px;
+  }
+}
+
 .form-land__field-item {
   &--field {
     & .form-land__item {
@@ -361,20 +373,37 @@
 @media (min-width: $desktop-width) {
   .form-land__field-item--field {
     margin-left: 10px;
+    margin-top: 5px;
   }
 
   .form-land__field-item--field .form-land__item {
     width: 435px;
+    margin-bottom: 52px;
+
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  
+  .form-land__field-item--radio p {
+    padding-bottom: 43px;
   }
 
   .form-land__field-item--radio {
     margin: 0;
     margin-left: 70px;
     margin-right: 10px;
+    margin-bottom: 31px;
+  }
+  
+  .form-land__field-item--radio .form-land__list {
+    width: 429px;
   }
 
   .form-land__field-item--radio .form-land__item {
-    width: 361px;
+    width: 162px;
+    padding: 0;
   }
 
   .form-land__field-item--contact {
@@ -389,7 +418,11 @@
 
     &::before {
       top: 0;
-      right: 500px;
+      right: 59px;
+    }
+
+    &::after {
+      right: 504px;
     }
   }
 
@@ -399,6 +432,7 @@
 
   .form-land__field-item--contact .form-land__item:last-child {
     margin: 0;
+    padding-bottom: 13px;
   }
 
   .form-land__field-item--check {
@@ -413,30 +447,39 @@
   }
 
   .form-land__field-item--check .form-land__item {
-    width: 231px;
+    margin: 0;
+    margin-bottom: 58px;
+    width: 200px;
   }
 
   .form-land__field-item--check .form-land__item:first-child {
+    padding-left: 117px;
     order: 1;
   }
 
   .form-land__field-item--check .form-land__item:nth-child(2) {
+    padding-left: 117px;
     order: 4;
   }
 
   .form-land__field-item--check .form-land__item:nth-child(3) {
+    padding-left: 115px;
     order: 2;
   }
 
   .form-land__field-item--check .form-land__item:nth-child(4) {
+    padding-left: 115px;
     order: 5;
   }
 
   .form-land__field-item--check .form-land__item:nth-child(5) {
+    padding-left: 95px;
     order: 3;
   }
 
   .form-land__field-item--check .form-land__item:last-child {
+    margin-bottom: 39px;
+    padding-left: 95px;
     order: 6;
   }
 
@@ -444,6 +487,14 @@
     margin-right: 10px;
     margin-left: 10px;
     width: 940px;
+  }
+
+  .form-land__field-item--area textarea {
+    padding-left: 18px;
+    padding-top: 14px;
+    padding-right: 329px;
+    padding-bottom: 50px;
+    margin-bottom: 36px;
   }
 }
 
@@ -506,8 +557,18 @@
   }
 }
 
-.form-land__obligatorily span {
+.form-land__obligatorily span:first-child {
   color: $pink;
+}
+
+.form-land__obligatorily span:last-child {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .form-land__obligatorily span:last-child {
+    display: inline;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -568,6 +629,7 @@
   .form-land__footer-wrapper {
     padding-right: 10px;
     padding-left: 10px;
+    margin-top: 65px;
     width: 940px;
   }
 }
