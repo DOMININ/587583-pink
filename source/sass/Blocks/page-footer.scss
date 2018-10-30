@@ -1,9 +1,9 @@
-.page-footer-index {
+.page-footer--index {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer-index {
+  .page-footer--index {
     display: block;
   }
 }

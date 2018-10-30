@@ -1,13 +1,25 @@
+.slider__toggles button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
 .slider__toggle {
   display: inline-block;
   margin-top: 3px;
   margin-right: 3px;
+  margin-left: 15px;
+  margin-bottom: 4px;
   height: 6px;
   width: 6px;
   background-color: #bec2c7;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   &:hover,
   &:focus {
