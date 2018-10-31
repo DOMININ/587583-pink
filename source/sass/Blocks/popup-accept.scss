@@ -1,4 +1,7 @@
 .popup-accept {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
   text-align: center;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -7,6 +10,12 @@
   .popup-accept {
     margin: 0 auto;
     width: 460px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-accept {
+    width: 780px;
   }
 }
 

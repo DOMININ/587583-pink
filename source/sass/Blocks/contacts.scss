@@ -1,3 +1,39 @@
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-bottom: 4px;
+  }
+}
+
+.contacts__feedback {
+  margin: 0;
+  padding-top: 42px;
+  padding-bottom: 34px;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__feedback {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 42px;
+    width: 369px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__feedback {
+    padding-top: 66px;
+    width: 461px;
+    font-size: 50px;
+    line-height: 59px;
+  }
+}
+
 .contacts__list {
   @include clear-list;
   text-align: center;
@@ -5,25 +41,110 @@
 
 .contacts__title {
   font-size: 18px;
+
+  &--email {
+    margin-left: 4px;
+    padding-bottom: 2px;
+  }
 }
 
 .contacts__text {
   margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 35px;
+  padding-top: 2px;
+  padding-bottom: 23px;
   width: 298px;
   font-size: 24px;
   font-weight: 300;
   color: $pink;
+
+  &--email {
+    display: block;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 26px;
+
+    &:hover,
+    &:focus {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
+
+  &--address {
+    line-height: 28px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    padding-top: 6px;
+
+    &--address {
+      padding-bottom: 29px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__text {
+    padding-top: 25px;
+
+    &--address {
+      padding-top: 23px;
+      padding-right: 2px;
+    }
+  }
 }
 
 .contacts__text a {
   color: $pink;
+
+    &:hover,
+    &:focus {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+}
+
+.contacts__list-wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__list-wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 618px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    position: relative;
+  }
+
+  .contacts__list-wrapper {
+    width: 938px;
+    padding-top: 14px;
+  }
+
+  .contacts__come {
+    position: absolute;
+    top: 14px;
+    left: 330px;
   }
 }

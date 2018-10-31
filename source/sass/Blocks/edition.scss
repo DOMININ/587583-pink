@@ -1,7 +1,7 @@
 .edition {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 45px;
+  padding-top: 91px;
+  padding-bottom: 44px;
   background-color: $grey-light;
 
   &::before {
@@ -17,6 +17,9 @@
 
 @media (min-width: $tablet-width) {
   .edition {
+    padding-top: 88px;
+    padding-bottom: 68px;
+
     &::before {
       height: 52px;
       width: 660px;
@@ -24,20 +27,38 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .edition {
+    padding-top: 138px;
+    padding-bottom: 94px;
+
+    &::before {
+      height: 76px;
+      width: 960px;
+      top: -1px;
+    }
+  }
+}
+
 .edition__list {
   position: relative;
-  left: -261px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
   line-height: 30px;
   text-transform: uppercase;
-  width: 842px;
+  width: 265%;
   border-collapse: collapse;
 }
 
 @media (min-width: $tablet-width) {
   .edition__list {
-    left: 0;
     width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .edition__list {
+    width: 940px;
   }
 }
 
@@ -56,24 +77,48 @@
 
 .edition__stroke:first-child .edition__item {
   padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 }
 
 .edition__stroke:not(:first-child) .edition__item {
-  padding-left: 24px;
+  padding-left: 22px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
   .edition__stroke:first-child .edition__item {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+
+    &--hit {
+      border-left: 2px solid #e5e5e5;
+      border-right: 2px solid #e5e5e5;
+    }
   }
 
   .edition__stroke:not(:first-child) .edition__item {
+    width: 143px;
+    padding-left: 15px;
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .edition__stroke:first-child .edition__item {
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  .edition__stroke:not(:first-child) .edition__item {
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 21px;
   }
 }
 
@@ -94,8 +139,8 @@
   &--yes::after {
     position: absolute;
     content: "";
-    top: 20px;
-    right: 14px;
+    top: 21px;
+    right: 16px;
     width: 31px;
     height: 21px;
     background: url("../img/icon-yes.svg") no-repeat center right;
@@ -105,12 +150,40 @@
   &--no::after {
     position: absolute;
     content: "";
-    top: 16px;
-    right: 16px;
+    top: 14px;
+    right: 18px;
     width: 27px;
     height: 29px;
     background: url("../img/icon-no.svg") no-repeat center right;
     background-size: 27px 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .edition__item {
+    &--yes::after {
+      top: 13px;
+      right: 60px;
+    }
+
+    &--no::after {
+      top: 7px;
+      right: 61px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .edition__item {
+    &--yes::after {
+      top: 22px;
+      right: 101px;
+    }
+
+    &--no::after {
+      top: 14px;
+      right: 103px;
+    }
   }
 }
 
@@ -122,22 +195,22 @@
   display: none;
 }
 
+@media (min-width: $desktop-width) {
+  .edition__item-hidden {
+    border-left: none;
+  }
+
+  .edition__item-title {
+    font-size: 18px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .edition__item {
     width: 155px;
 
     &--hit::before {
       background: url("../img/bg-hit-tablet.svg") no-repeat top left;
-    }
-
-    &--yes {
-      top: -8px;
-      right: 41px;
-    }
-
-    &--no {
-      top: -8px;
-      right: 41px;
     }
   }
 
@@ -162,8 +235,8 @@
   font-size: 16px;
   color: $white;
   transform: rotate(-45deg);
-  top: 13px;
-  left: 10px;
+  top: 11px;
+  left: 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -212,8 +285,32 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .edition__item--hit::before {
+    background: url("../img/bg-hit.svg") no-repeat top left;
+  }
+
+  .edition__banner {
+    top: 11px;
+    left: 10px;
+  }
+
+  .edition__item p {
+    &:first-child {
+      font-size: 18px;
+    }
+
+    &:last-child {
+      font-size: 24px;
+    }
+  }
+}
+
 .edition__toggles {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 59px;
+  margin: 0 auto;
   padding-top: 40px;
   text-align: center;
 }

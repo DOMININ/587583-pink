@@ -1,34 +1,82 @@
 .page-main__header {
-  padding-top: 96px;
-  padding-bottom: 60px;
-  margin-top: -70px;
+  padding-top: 100px;
+  padding-bottom: 55px;
+  margin-top: -69px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   background-color: $top-color;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 694px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-main__header {
     padding-top: 178px;
-    padding-bottom: 85px;
+    padding-bottom: 81px;
     margin-top: -110px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    padding-top: 173px;
+    padding-bottom: 101px;
+    margin-top: -109px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 }
 
 .page-main__header-photo {
-  padding-top: 96px;
-  padding-bottom: 88px;
-  margin-top: -70px;
+  padding-top: 102px;
+  padding-bottom: 83px;
+  margin-top: -71px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   background-color: $top-color;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 705px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-main__header-photo {
     padding-top: 178px;
-    padding-bottom: 143px;
+    padding-bottom: 141px;
     margin-top: -110px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header-photo {
+    padding-top: 172px;
+    padding-bottom: 100px;
+    margin-top: -108px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 }
 
@@ -47,6 +95,12 @@
     width: 474px;
     font-size: 50px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header h1 {
+    width: 747px;
   }
 }
 
@@ -71,7 +125,7 @@
 .page-main__title {
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 34px;
   width: 280px;
   font-size: 14px;
   font-weight: 300;
@@ -85,12 +139,36 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    width: 487px;
+    width: 490px;
+    font-weight: 400;
     font-size: 18px;
+    padding-top: 92px;
+    padding-bottom: 70px;
+
+    &--photo {
+      padding-bottom: 76px;
+    }
   }
 
   .page-main__title span {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 571px;
+    font-size: 18px;
+    padding-bottom: 89px;
+
+    &--form {
+    	width: 756px;
+    	padding-bottom: 78px;
+    }
+  }
+
+  .page-main__title span {
+    display: inline;
   }
 }
 
@@ -115,12 +193,14 @@
   font-weight: 300;
 
   &:first-child {
-    padding-top: 50px;
+    padding-top: 40px;
+    line-height: 29px;
   }
 
   &:last-child {
-    padding-top: 45px;
-    padding-bottom: 38px;
+    padding-top: 30px;
+    line-height: 28px;
+    padding-bottom: 36px;
   }
 }
 
@@ -133,9 +213,33 @@
     font-weight: 300;
     line-height: 50px;
 
+    &:first-child {
+      padding-top: 58px;
+    }
+
     &:last-child {
-      padding-top: 0;
+      padding-top: 11px;
+      padding-bottom: 48px;
+      line-height: 47px;
       width: 334px;
     }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-main__slogan {
+    font-size: 50px;
+  }
+
+  .page-main__slogan p:first-child {
+    padding-top: 83px;
+  }
+
+  .page-main__slogan p:last-child {
+    width: 417px;
+    line-height: 59px;
+    padding-top: 17px;
+    padding-bottom: 89px;
   }
 }

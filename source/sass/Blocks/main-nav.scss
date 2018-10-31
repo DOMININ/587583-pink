@@ -34,14 +34,21 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 23px;
-  right: 20px;
+  top: 20px;
+  right: 19px;
   border: 0;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: 40px;
+    top: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -56,6 +63,17 @@
   border-top: 1px solid $black;
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    display: flex;
+    width: 631px;
+    text-transform: none;
+    font-weight: 400;
+    background: none;
+    border: none;
+  }
+}
+
 .main-nav__item {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -64,36 +82,39 @@
   border-bottom: 1px solid $black;
 }
 
-.main-nav__item a {
+@media (min-width: $desktop-width) {
+  .main-nav__item {
+    padding-top: 38px;
+    margin-right: 80px;
+    padding-bottom: 10px;
+    border: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
+  }
+}
+
+.main-nav__item:not(.main-nav__item--active) a {
   color: $white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $pink;
   }
 
   &:active {
-    color: $pink;
+    color: #ffffff;
     opacity: 0.3;
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list {
-    display: none;
-  }
-}
-
-/* Временно для сетки */
-@media (min-width: $desktop-width) {
-  .main-nav {
-    min-height: 110px;
-  }
-
-  .main-nav__list {
-    display: flex;
-  }
-
-  .main-nav__toggle {
     display: none;
   }
 }

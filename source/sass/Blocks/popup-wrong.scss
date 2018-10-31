@@ -1,4 +1,7 @@
 .popup-wrong {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 50px;
@@ -9,6 +12,12 @@
   .popup-wrong {
     margin: 0 auto;
     width: 460px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-wrong {
+    width: 780px;
   }
 }
 

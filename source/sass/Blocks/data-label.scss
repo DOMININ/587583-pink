@@ -1,6 +1,7 @@
 .data-label {
   display: block;
-  margin-left: 25px;
+  margin-left: 22px;
+  margin-bottom: 4px;
   line-height: 30px;
   text-transform: uppercase;
   color: $pink;
@@ -10,7 +11,8 @@
   .data-label {
     display: inline;
     margin-left: 0;
-    margin-right: 20px;
+    margin-right: 19px;
+    margin-bottom: -3px;
   }
 
   .data-label-telephone {
@@ -19,5 +21,15 @@
 
   .data-label-email {
     margin-left: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-label {
+    margin-bottom: -4px;
+  }
+
+  .data-label-email {
+    margin-left: 21px;
   }
 }

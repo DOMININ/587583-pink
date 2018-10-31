@@ -1,10 +1,10 @@
 .reviews {
-  padding-top: 50px;
+  padding-top: 42px;
   line-height: 30px;
 }
 
 .reviews__list {
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 }
 
 .reviews__item {
@@ -30,6 +30,7 @@
 
 .reviews__text {
   margin: 0;
+  padding-top: 11px;
 }
 
 .reviews__age {
@@ -45,10 +46,14 @@
   }
 
   .reviews__text {
+    font-size: 18px;
+    padding-top: 49px;
     order: 1;
   }
 
   .reviews__item cite {
+    font-size: 20px;
+    padding-top: 36px;
     order: 2;
   }
 
@@ -60,7 +65,98 @@
 }
 
 .reviews__toggles {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 62px;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__toggles {
+    padding-bottom: 23px;
+  }
+}
+
+.reviews__buttons {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+    padding-top: 136px;
+    padding-bottom: 18px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 72px;
+      left: 443px;
+      width: 79px;
+      height: 64px;
+      background: url("../img/icon-quotes.svg") no-repeat;
+    }
+  }
+
+  .reviews__item {
+    width: 712px;
+  }
+
+  .reviews__item p {
+    width: 712px;
+    font-size: 18px;
+  }
+
+  .reviews__item cite {
+    padding-top: 36px;
+    padding-bottom: 2px;
+    font-size: 24px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__buttons {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    border: 0;
+    cursor: pointer;
+
+    &--previous {
+      top: 212px;
+      left: 10px;
+      opacity: 0.4;
+      background: url("../img/icon-review-arrow-left.svg");
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+    }
+
+    &--next {
+      top: 212px;
+      right: 10px;
+      opacity: 0.4;
+      background: url("../img/icon-review-arrow-right.svg");
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+    }
+  }
 }

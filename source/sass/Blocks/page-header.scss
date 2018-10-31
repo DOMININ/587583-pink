@@ -4,53 +4,116 @@
   z-index: 1;
 }
 
+.post-photo__clipping {
+  color: #b5b9be;
+
+  &--active svg {
+    color: $pink;
+    cursor: default;
+  }
+
+  &:hover,
+  &:focus {
+    color: #8d949b;
+  }
+}
+
+.post-photo__pouring,
+.post-photo__transparency {
+  color: #b5b9be;
+
+  &:hover,
+  &:focus {
+    color: #8d949b;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .post-photo__pouring,
+  .post-photo__transparency {
+    &--active svg {
+      color: $pink;
+      cursor: default;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+}
+
 .page-header--opened {
   background-color: $text-color;
 }
 
 .page-header__logo {
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  margin-left: 19px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    margin-top: 31px;
-    margin-bottom: 32px;
+    margin-top: 27px;
+    margin-bottom: 34px;
+    margin-left: 20px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin-left: 10px;
+  }
+}
+
+.page-header__logotype {
+  margin-left: -70px;
+}
+
+.page-header__logotype:hover path,
+.page-header__logotype:focus path {
+  fill: #d22856;
+}
+
+.page-header__logotype:active path {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .page-header__logo-tablet {
   display: none;
 }
 
+.page-header__logo-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .page-header__logo-mobile {
-    display: none;
+  .page-header__logo svg {
+    margin: 0;
   }
 
   .page-header__logo-tablet {
     display: block;
+  }
+}
 
-    &:hover path,
-    &:focus path {
-      fill: $pink;
-    }
+@media (min-width: $desktop-width) {
+  .page-header__logo-tablet {
+    display: none;
+  }
 
-    &:active path {
-      fill: $white;
-      opacity: 0.3;
-    }
+  .page-header__logo-desktop {
+    display: block;
   }
 }
 
 .page-header__border {
   border-bottom: 1px solid $black;
-}
-
-.page-header__wrapper {
-  display: flex;
-  flex-direction: column;
 }
