@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo">
@@ -279,7 +282,7 @@
               <div class="post-photo__tool-clipping">
                 <button class="post-photo__clipping post-photo__clipping--active">
                   <span class="visually-hidden">Обрезать</span>
-                  <svg width="48" height="47"><use xlink:href="img/sprite.svg#icon-clipping"></use></svg>
+                  <svg width="48" height="47"><use xlink:href="#icon-editor-crop"></use></svg>
                 </button>
                 <div class="post-photo__scale">
                   <div class="post-photo__toggle"></div>
@@ -288,7 +291,7 @@
               <div class="post-photo__tool-pouring">
                 <button class="post-photo__pouring post-photo__pouring--active">
                   <span class="visually-hidden">Залить</span>
-                  <svg width="49" height="43"><use xlink:href="img/sprite.svg#icon-pouring"></use></svg>
+                  <svg width="49" height="43"><use xlink:href="#icon-editor-fill"></use></svg>
                 </button>
                 <div class="post-photo__scale">
                   <div class="post-photo__toggle"></div>
@@ -297,7 +300,7 @@
               <div class="post-photo__tool-transparency">
                 <button class="post-photo__transparency post-photo__transparency--active">
                   <span class="visually-hidden">Изменить прозрачность</span>
-                  <svg width="33" height="32"><use xlink:href="img/sprite.svg#icon-transparency"></use></svg>
+                  <svg width="33" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
                 </button>
                 <div class="post-photo__scale">
                   <div class="post-photo__toggle"></div>
