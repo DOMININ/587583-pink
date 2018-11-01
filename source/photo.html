@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Фотографии</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
+    <header class="page-header page-header--opened">
       <div class="page-header__wrapper">
         <a href="#" class="page-header__logo">
           <svg class="page-header__logotype" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="147px" height="41px" viewBox="0 0 147 41" enable-background="new 0 0 147 41" xml:space="preserve">
@@ -42,7 +42,7 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -72,7 +72,7 @@
         <p>Видите, как не хватает ваших?</p>
       </div>
       <section class="share-photo">
-        <div class="share-photo__list container">
+        <div class="share-photo__list">
           <article class="share-photo__author-item">
             <a class="share-photo__author-picture" href="#">
               <picture>
@@ -105,7 +105,7 @@
               </div>
             </div>
           </article>
-          <div class="share-photo__item-wrapper">
+          <div class="share-photo__item-wrapper container">
             <article class="share-photo__item">
               <a class="share-photo__author-picture" href="#">
                 <picture>
@@ -278,8 +278,8 @@
             <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Редактируемое фото" class="post-photo__image">
           </picture>
           <div class="post-photo-tools">
-            <div class="post-photo__tool-wrapper">
-              <div class="post-photo__tool-clipping">
+            <ul class="post-photo__tool-wrapper">
+              <li class="post-photo__tool-clipping">
                 <button class="post-photo__clipping post-photo__clipping--active">
                   <span class="visually-hidden">Обрезать</span>
                   <svg width="48" height="47"><use xlink:href="#icon-editor-crop"></use></svg>
@@ -287,17 +287,17 @@
                 <div class="post-photo__scale">
                   <div class="post-photo__toggle"></div>
                 </div>
-              </div>
-              <div class="post-photo__tool-pouring">
+              </li>
+              <li class="post-photo__tool-pouring">
                 <button class="post-photo__pouring post-photo__pouring--active">
                   <span class="visually-hidden">Залить</span>
-                  <svg width="49" height="43"><use xlink:href="#icon-editor-fill"></use></svg>
+                  <svg width="49" height="49"><use xlink:href="#icon-editor-fill"></use></svg>
                 </button>
                 <div class="post-photo__scale">
                   <div class="post-photo__toggle"></div>
                 </div>
-              </div>
-              <div class="post-photo__tool-transparency">
+              </li>
+              <li class="post-photo__tool-transparency">
                 <button class="post-photo__transparency post-photo__transparency--active">
                   <span class="visually-hidden">Изменить прозрачность</span>
                   <svg width="33" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
@@ -305,8 +305,8 @@
                 <div class="post-photo__scale">
                   <div class="post-photo__toggle"></div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div class="post-photo__buttons">
               <button type="submit" class="post-photo__send">Запостить</button>
               <button class="post-photo__reset">Отмена</button>
@@ -351,19 +351,19 @@
             <li>
               <a class="page-footer__social-button">
                 <span class="visually-hidden">Twitter</span>
-                <svg width="18" height="15"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                <svg width="18" height="15"><use xlink:href="#icon-twitter"></use></svg>
               </a>
             </li>
             <li>
               <a class="page-footer__social-button">
                 <span class="visually-hidden">Facebook</span>
-                <svg width="9" height="19"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                <svg width="9" height="19"><use xlink:href="#icon-facebook"></use></svg>
               </a>
             </li>
             <li>
               <a class="page-footer__social-button">
                 <span class="visually-hidden">Youtube</span>
-                <svg width="15" height="14"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+                <svg width="15" height="14"><use xlink:href="#icon-youtube"></use></svg>
               </a>
             </li>
           </ul>
@@ -372,7 +372,7 @@
           <p>Разработано</p>
           <a href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип Академии</span>
-            <svg class="page-footer__copyright-academy" width="27" height="34"><use xlink:href="img/sprite.svg#icon-academy"></use></svg>
+            <svg class="page-footer__copyright-academy" width="27" height="34"><use xlink:href="#icon-academy"></use></svg>
           </a>
         </div>
       </div>

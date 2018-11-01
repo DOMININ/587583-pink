@@ -69,6 +69,18 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .description br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description br {
+    display: none;
+  }
+}
+
 .description__list {
   @include clear-list;
   text-align: center;

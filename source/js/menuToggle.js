@@ -2,8 +2,10 @@ var navMain = document.querySelector('.main-nav');
 var headerMain = document.querySelector('.page-header');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
 headerMain.classList.remove('page-header--opened');
+navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--opened');
+navMain.classList.add('main-nav--closed');
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {

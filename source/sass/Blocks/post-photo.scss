@@ -30,11 +30,11 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-bottom: 41px;
   font-size: 14px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
   background-color: $white;
 }
 
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .post-photo__title {
     padding-top: 6px;
     padding-bottom: 66px;
@@ -101,11 +101,13 @@
 }
 
 .post-photo__tool-wrapper {
+  padding: 0;
+  list-style: none;
   position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 63px;
+  margin-bottom: 59px;
   padding-top: 33px;
   width: 206px;
 }
@@ -123,11 +125,16 @@
   border: 0;
   padding: 0;
   background: #f2f2f2;
+  fill: #b5b9be;
   cursor: pointer;
+}
 
-  &--active path:nth-child(2) {
-    fill: #d22856;
-  }
+.post-photo__clipping--active svg {
+  fill: #d22856;
+}
+
+.post-photo__tool-transparency {
+  fill: #b5b9be;
 }
 
 @media (min-width: $tablet-width) {
@@ -140,8 +147,8 @@
   }
 
   .post-photo__tool-pouring {
-    padding-top: 23px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 15px;
     text-align: left;
     margin-left: -2px;
     border-bottom: 1px solid #dddfe0;
@@ -159,14 +166,14 @@
 @media (min-width: $desktop-width) {
   .post-photo__tool-clipping {
     padding-left: 3px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 5px;
   }
 
   .post-photo__tool-pouring {
     margin-top: -3px;
     padding-top: 14px;
-    padding-bottom: 7px;
+    padding-bottom: 3px;
   }
 
   .post-photo__tool-transparency {
@@ -196,24 +203,16 @@
 .post-photo__pouring {
   margin-top: 2px;
   border: 0;
+  fill: #b5b9be;
   background: #f2f2f2;
   cursor: pointer;
 
-  &:hover path:nth-child(2),
-  &:focus path:nth-child(2) {
+  &:hover,
+  &:focus {
     fill: #8d949b;
   }
 
-  &:hover rect,
-  &:focus rect {
-    fill: #8d949b;
-  }
-
-  &:active path:nth-child(2) {
-    fill: $pink;
-  }
-
-  &:active rect {
+  &:active {
     fill: $pink;
   }
 }
@@ -222,16 +221,19 @@
   .post-photo__clipping svg {
     width: 48px;
     height: 47px;
+    cursor: pointer;
   }
 
   .post-photo__pouring svg {
     width: 49px;
-    height: 43px;
+    height: 47px;
+    cursor: pointer;
   }
 
   .post-photo__transparency svg {
     width: 33px;
     height: 32px;
+    cursor: pointer;
   }
 }
 
@@ -240,14 +242,8 @@
     margin-top: 3px;
   }
 
-  .post-photo__pouring--active {
-    & path:nth-child(2) {
-      fill: $pink;
-    }
-
-    & rect {
-      fill: $pink;
-    }
+  .post-photo__pouring--active svg {
+    fill: $pink;
   }
 }
 
@@ -257,27 +253,25 @@
   background: #f2f2f2;
   cursor: pointer;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: #8d949b;
   }
 
-  &:active path {
+  &:active {
     fill: $pink;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .post-photo__transparency--active {
-    & path {
-      fill: $pink;
-    }
+  .post-photo__transparency--active svg {
+    fill: $pink;
   }
 }
 
 .post-photo__tool-clipping .post-photo__scale {
   position: absolute;
-  margin-bottom: -33px;
+  margin-bottom: -29px;
   width: 240px;
   bottom: 0;
   right: -16px;
@@ -376,7 +370,7 @@
   }
 
   .post-photo__tool-clipping .post-photo__toggle {
-    right: 203px
+    right: 203px;
   }
 
   .post-photo__tool-pouring .post-photo__scale {
@@ -386,7 +380,7 @@
   }
 
   .post-photo__tool-pouring .post-photo__toggle {
-    right: 27px
+    right: 27px;
   }
 
   .post-photo__tool-transparency .post-photo__scale {

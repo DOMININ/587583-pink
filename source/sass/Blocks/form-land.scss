@@ -129,6 +129,7 @@
     position: relative;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 26px;
     top: -10px;
     width: 220px;
     background-color: $white;
@@ -158,14 +159,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-land__field-item:nth-child(5) p {
+  .form-land__field-item:nth-child(3) p {
     padding-bottom: 24px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .form-land__field-item:nth-child(3) p {
-    padding-bottom: 23px;
+  .form-land__field-item:nth-child(5) p {
+    padding-bottom: 24px;
   }
 }
 
@@ -315,8 +314,7 @@
       right: 59px;
       width: 60px;
       height: 64px;
-      background: url("../img/icon-phone.svg") no-repeat center;
-      background-color: #e5e5e5;
+      background: url("../img/icon-phone.svg") no-repeat center #e5e5e5;
       border-radius: 3px;
       background-size: 20px 19px;
     }
@@ -328,7 +326,7 @@
       right: 59px;
       width: 60px;
       height: 64px;
-      background: url("../img/icon-mail.svg") no-repeat center;
+      background: url("../img/icon-mail.svg") no-repeat center #e5e5e5;
       background-color: #e5e5e5;
       border-radius: 3px;
       background-size: 20px 19px;
@@ -385,7 +383,7 @@
       margin-bottom: 0;
     }
   }
-  
+
   .form-land__field-item--radio p {
     padding-bottom: 43px;
   }
@@ -396,7 +394,7 @@
     margin-right: 10px;
     margin-bottom: 31px;
   }
-  
+
   .form-land__field-item--radio .form-land__list {
     width: 429px;
   }
@@ -419,10 +417,13 @@
     &::before {
       top: 0;
       right: 59px;
+      height: 62px;
+      background-size: 18px 15px;
     }
 
     &::after {
       right: 504px;
+      height: 62px;
     }
   }
 
@@ -566,6 +567,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-land__obligatorily {
+    padding-top: 3px;
+  }
+
   .form-land__obligatorily span:last-child {
     display: inline;
   }

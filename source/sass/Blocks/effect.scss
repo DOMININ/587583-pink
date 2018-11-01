@@ -29,21 +29,21 @@
   }
 
   .effect__timer {
+    width: 238px;
+    height: 276px;
+    background: url("../img/timer.svg") no-repeat;
+    background-size: cover;
+
     &::after {
       position: absolute;
       content: "24";
       left: 84px;
-      bottom: 58px;
+      bottom: 50px;
       color: $pink;
       font-size: 96px;
       line-height: 150px;
       font-weight: 700;
     }
-  }
-
-  .effect__timer svg {
-    width: 238px;
-    height: 276px;
   }
 
   .effect__text {
@@ -99,11 +99,6 @@
       top: 180px;
       left: 81px;
     }
-  }
-
-  .effect__timer svg {
-    width: 298px;
-    height: 345px;
   }
 
   .effect__description br:not(:last-child) {
