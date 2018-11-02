@@ -29,10 +29,10 @@
     left: calc(50% - 18px);
     z-index: 1;
   }
+}
 
-  & img {
-    display: block;
-  }
+.map img {
+  display: block;
 }
 
 .map iframe {

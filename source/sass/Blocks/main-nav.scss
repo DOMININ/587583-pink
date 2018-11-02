@@ -3,8 +3,7 @@
   height: 24px;
   background: url("../img/icon-menu-burger.svg");
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: url("../img/icon-menu-burger-hover.svg");
   }
 
@@ -18,8 +17,7 @@
   height: 24px;
   background: url("../img/icon-menu-cross.svg");
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: url("../img/icon-menu-cross-hover.svg");
   }
 

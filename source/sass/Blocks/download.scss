@@ -102,6 +102,7 @@
   padding-left: 58px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet-width) {

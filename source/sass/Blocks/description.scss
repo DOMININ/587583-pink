@@ -140,11 +140,6 @@
     padding: 0;
     width: 313px;
 
-    &:last-child h3 {
-      width: 241px;
-      padding-left: 14px;
-    }
-
     &:first-child::before {
       position: absolute;
       content: "";
@@ -189,6 +184,11 @@
         background-size: 292px auto;
       }
     }
+  }
+
+  .description__item:last-child h3 {
+    width: 241px;
+    padding-left: 14px;
   }
 
   .description__list h3 {
