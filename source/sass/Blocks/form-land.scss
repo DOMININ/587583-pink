@@ -173,10 +173,10 @@
     margin: 0 auto;
     margin-bottom: 17px;
     width: 280px;
+  }
 
-    &:last-child {
-      padding-bottom: 25px;
-    }
+  &--field .form-land__item:last-child {
+    padding-bottom: 25px;
   }
 
   &--contact .form-land__item {
@@ -199,11 +199,11 @@
     margin-bottom: 58px;
     padding-left: 89px;
     font-size: 18px;
+  }
 
-    &:last-child {
-      padding-bottom: 49px;
-      margin-bottom: 32px;
-    }
+  &--check .form-land__item:last-child {
+    padding-bottom: 49px;
+    margin-bottom: 32px;
   }
 
   &--radio {
@@ -218,10 +218,10 @@
     margin-bottom: 51px;
     padding-left: 89px;
     font-size: 18px;
+  }
 
-    &:last-child {
-      margin-bottom: 30px;
-    }
+  &--radio .form-land__item:last-child {
+    margin-bottom: 30px;
   }
 
   &--radio p {
@@ -306,25 +306,23 @@
     &::after {
       position: absolute;
       content: "";
-      top: 0;
+      top: 2px;
       right: 59px;
       width: 60px;
-      height: 64px;
+      height: 60px;
       background: url("../img/icon-phone.svg") no-repeat center #e5e5e5;
-      border-radius: 3px;
       background-size: 20px 19px;
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 132px;
+      top: 134px;
       right: 59px;
       width: 60px;
-      height: 64px;
+      height: 60px;
       background: url("../img/icon-mail.svg") no-repeat center #e5e5e5;
       background-color: #e5e5e5;
-      border-radius: 3px;
       background-size: 20px 19px;
     }
   }
@@ -411,15 +409,15 @@
     justify-content: space-between;
 
     &::before {
-      top: 0;
+      top: 2px;
       right: 59px;
-      height: 62px;
+      height: 58px;
       background-size: 18px 15px;
     }
 
     &::after {
       right: 504px;
-      height: 62px;
+      height: 58px;
     }
   }
 

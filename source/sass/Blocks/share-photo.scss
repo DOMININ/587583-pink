@@ -239,6 +239,10 @@
   font-weight: 300;
 }
 
+.share-photo__panorama-picture {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .share-photo__panorama-picture {
     height: 509px;
