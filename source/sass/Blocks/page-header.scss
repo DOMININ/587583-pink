@@ -51,6 +51,12 @@
   background-color: $text-color;
 }
 
+@media (min-width: $desktop-width) {
+  .page-header--opened {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .page-header__logo {
   display: inline-block;
   margin-top: 5px;

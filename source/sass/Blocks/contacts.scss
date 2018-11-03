@@ -1,6 +1,6 @@
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-bottom: 4px;
+    padding-bottom: 14px;
   }
 }
 
@@ -105,16 +105,16 @@
 .contacts__text a {
   color: $pink;
 
-    &:hover,
-    &:focus {
-      color: #283645;
-      text-decoration: underline;
-    }
+  &:hover,
+  &:focus {
+    color: #283645;
+    text-decoration: underline;
+  }
 
-    &:active {
-      text-decoration: none;
-      opacity: 0.3;
-    }
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 .contacts__list-wrapper {

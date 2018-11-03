@@ -69,6 +69,18 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .description br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description br {
+    display: none;
+  }
+}
+
 .description__list {
   @include clear-list;
   text-align: center;
@@ -128,11 +140,6 @@
     padding: 0;
     width: 313px;
 
-    &:last-child h3 {
-      width: 241px;
-      padding-left: 14px;
-    }
-
     &:first-child::before {
       position: absolute;
       content: "";
@@ -177,6 +184,11 @@
         background-size: 292px auto;
       }
     }
+  }
+
+  .description__item:last-child h3 {
+    width: 241px;
+    padding-left: 14px;
   }
 
   .description__list h3 {

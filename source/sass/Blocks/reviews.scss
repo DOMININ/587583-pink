@@ -7,6 +7,12 @@
   padding-bottom: 33px;
 }
 
+@media (min-width: $desktop-width) {
+  .reviews__list {
+    padding-bottom: 26px;
+  }
+}
+
 .reviews__item {
   margin: 0 auto;
   text-align: center;
@@ -47,7 +53,7 @@
 
   .reviews__text {
     font-size: 18px;
-    padding-top: 49px;
+    padding-top: 56px;
     order: 1;
   }
 
@@ -64,6 +70,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .reviews__text {
+    padding-top: 49px;
+  }
+}
+
 .reviews__toggles {
   display: flex;
   justify-content: space-between;
@@ -75,7 +87,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews__toggles {
-    padding-bottom: 23px;
+    padding-bottom: 19px;
   }
 }
 
