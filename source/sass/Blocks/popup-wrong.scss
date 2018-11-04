@@ -1,11 +1,9 @@
 .popup-wrong {
-  display: none;
+  //display: none;
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +22,6 @@
 .popup-wrong p {
   margin: 0 auto;
   padding-top: 30px;
-  padding-bottom: 40px;
   width: 280px;
 }
 
@@ -33,6 +30,12 @@
     width: 306px;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-wrong p {
+    width: 378px;
   }
 }
 
@@ -51,6 +54,39 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .popup-wrong b {
+    width: 396px;
+  }
+}
+
+.popup-wrong__wrapper {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popup-wrong__background {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: $grey-light;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-wrong__background {
+    padding: 45px 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-wrong__background {
+    padding: 45px 160px;
+  }
+}
+
 .popup-wrong__close-window {
   color: $white;
   text-transform: uppercase;
@@ -58,8 +94,8 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 126px;
-  padding-left: 127px;
+  padding-right: 67px;
+  padding-left: 67px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
