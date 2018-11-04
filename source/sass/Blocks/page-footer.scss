@@ -102,9 +102,10 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__social {
-    margin-right: -17px;
+    margin-right: -9px;
 
     &--form {
+      margin-right: -17px;
       padding-top: 3px;
     }
   }
