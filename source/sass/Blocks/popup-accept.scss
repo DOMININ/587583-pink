@@ -31,9 +31,11 @@
     font-size: 18px;
     line-height: 24px;
   }
+}
 
-  .popup-accept br {
-    display: none;
+@media (min-width: $desktop-width) {
+  .popup-accept p {
+    width: 378px;
   }
 }
 
@@ -52,6 +54,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .popup-accept b {
+    width: 396px;
+  }
+}
+
 .popup-accept__wrapper {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -65,6 +73,18 @@
   padding-right: 20px;
   padding-left: 20px;
   background-color: $grey-light;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-accept__background {
+    padding: 45px 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup-accept__background {
+    padding: 45px 160px;
+  }
 }
 
 .popup-accept__close-window {
